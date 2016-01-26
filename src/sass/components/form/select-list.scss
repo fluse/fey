@@ -1,0 +1,38 @@
+
+.select-list {
+
+    &.cnr {
+        text-align: center;
+    }
+
+    li {
+        display: inline-block;
+        padding: 0 .2em;
+    }
+
+    label {
+        span {
+            font-size: 14px;
+            padding: .85em 1em;
+            border: 1px solid $color-interact;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: background-color .1s, border-color .1s ease, color .1s;
+            -webkit-touch-callout: none;
+               user-select: none;
+            &:active {
+                background-color: $color-interact;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        input:checked + span {
+            color: #fff;
+            border: 1px solid $color-info;
+            background-color: $color-info;
+        }
+    }
+}

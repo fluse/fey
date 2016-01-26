@@ -1,0 +1,94 @@
+button {
+    border: none;
+}
+
+[class*='btn-'] {
+    font-size: 1.6em;
+    font-weight: 300;
+    text-decoration: none;
+    padding: .75em .55em;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    @extend %round;
+
+    &.dynamic {
+        width: auto;
+        display: inline-block;
+    }
+
+    &.icon {
+        font-size: 2em;
+        padding: .45em .25em;
+    }
+
+    i {
+        position: relative;
+        top: 1px;
+    }
+
+    i:first-child {
+        padding-right: .5em;
+    }
+
+    i:last-child {
+        padding-left: .5em;
+    }
+}
+
+.btn-small {
+    font-size: 1em;
+}
+
+.btn-primary, .btn-success {
+    color: #fff;
+    background-color: $color-green;
+    * {
+        color: #fff;
+    }
+
+    &:hover, &:focus {
+        background-color: lighten($color-green, 3%);;
+    }
+}
+
+.btn-error {
+    color: #fff;
+    background-color: $color-red;
+    * {
+        color: #fff;
+    }
+
+    &:hover, &:focus {
+        background-color: lighten($color-red, 3%);;
+    }
+}
+
+.btn-info {
+    color: #fff;
+    background-color: $color-info;
+    * {
+        color: #fff;
+    }
+
+    &:hover, &:focus {
+        background-color: lighten($color-info, 3%);;
+    }
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: $color-footer;
+    * {
+        color: #fff;
+    }
+}
+
+.btn-meta {
+    color: #fff;
+    background-color: $color-orange;
+    * {
+        color: #fff;
+    }
+}

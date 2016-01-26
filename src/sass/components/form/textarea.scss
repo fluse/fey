@@ -1,0 +1,10 @@
+textarea {
+    -webkit-appearance: none;
+    border-radius: 0;
+    border: 1px solid darken($color-grey, 20%);
+    box-shadow: none;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    padding: .6em;
+}

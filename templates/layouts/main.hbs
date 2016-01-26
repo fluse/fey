@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>{{response.title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/public/dist/app{{#if request.environment.production}}.min{{/if}}.css" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+    {{> header}}
+
+    <main id="page">
+        {{{body}}}
+    </main>
+
+    {{> footer}}
+
+    <script>
+        var response = {{{toJSON response}}};
+        var request = {{{toJSON request}}};
+    </script>
+
+    <script src="/public/dist/app{{#if request.environment.production}}.min{{/if}}.js"></script>
+
+    {{#unless response.production}}
+        <script src="//localhost:45678/livereload.js"></script>
+    {{/unless}}
+</body>
+</html>

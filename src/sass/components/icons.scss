@@ -1,0 +1,85 @@
+
+@font-face {
+    font-family:"icons";
+        src: url("../font/icons.eot");
+        src: url("../font/icons.eot?#iefix") format("embedded-opentype"),
+		url("../font/icons.woff") format("woff"),
+		url("../font/icons.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+[class*='icn-']:before, .icn:before {
+    font-family: 'icons';
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Icons */
+
+.icn-add:before {
+    content: "\f101";
+}
+
+.icn-arrow-left:before {
+    content: "\f102";
+}
+
+.icn-arrow-right:before {
+    content: "\f103";
+}
+
+.icn-calendar:before {
+    content: "\f104";
+}
+
+.icn-close:before {
+    content: "\f105";
+}
+
+.icn-duplicate:before {
+    content: "\f106";
+}
+
+.icn-facebook:before {
+    content: "\f107";
+}
+
+.icn-image:before {
+    content: "\f108";
+}
+
+.icn-instagram:before {
+    content: "\f109";
+}
+
+.icn-remove:before {
+    content: "\f10a";
+}
+
+.icn-save:before {
+    content: "\f10b";
+}
+
+.icn-star:before {
+    content: "\f10c";
+}
+
+.icn-to:before {
+    content: "\f10d";
+}
+
+.icn-twitter:before {
+    content: "\f10e";
+}
+
+.icn-view:before {
+    content: "\f10f";
+}
+
+.icn-youtube:before {
+    content: "\f110";
+}
+
+

@@ -1,0 +1,114 @@
+.full {
+    @extend .fadeIn;
+    @extend .duration-2000;
+    @extend .delayed-800;
+    max-width: 100%;
+    max-height: 100%;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: auto;
+        height: auto;
+        content: ' ';
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+        @extend .fadeIn;
+        @extend .duration-1200;
+        @extend .delayed-1400;
+        position: absolute;
+        top: 10%;
+        width: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 320px;
+        z-index: 1;
+        @include MQ(M) {
+            width: 80%;
+        }
+    }
+
+    nav {
+        top: 50%;
+        position: absolute;
+        left: 0;
+        text-align: center;
+        width: 100%;
+
+        @include MQ(M) {
+            top: 55%;
+        }
+
+        li {
+            @extend .fadeInUp;
+            @extend .duration-1500;
+            @extend .delayed-1800;
+
+            display: inline-block;
+            min-width: 150px;
+            padding: 0 .5em;
+            margin: .8em .2em;
+            @include MQ(M) {
+                min-width: 200px;
+                padding: 0 1.5em;
+                margin: .8em .4em;
+            }
+        }
+
+        a {
+            display: block;
+            color: #fff;
+            position: relative;
+            font-size: 3em;
+            padding: .3em .5em;
+            text-decoration: none;
+            font-weight: 300;
+            border: 1px solid #fff;
+            &:hover, &:active {
+                font-weight: 400;
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
+    .social {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 5%;
+
+        @include MQ(M) {
+            bottom: 10%;
+        }
+
+        @extend .fadeInUp;
+        @extend .duration-1500;
+        @extend .delayed-3000;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            padding: 0 2em;
+        }
+
+        a {
+            color: #fff;
+            font-size: 2.5em;
+            text-decoration: none;
+        }
+    }
+}

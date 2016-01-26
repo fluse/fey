@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <title>CamperDays</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/public/dist/backend{{#if request.environment.production}}.min{{/if}}.css" />
+    <link rel="shortcut icon" href="/public/favicon.ico" />
+
+</head>
+
+    <main id="page">
+        <div class="area-full menu">
+
+            <div class="area-top">
+                <img src="/public/svg/logo-single.svg" />
+            </div>
+
+            <nav class="area-fix">
+                <ul>
+                    <li class="{{isActive request.page 'backend/landing/page'}}">
+                        <a href="/backend/landing/page">Landing Pages</a>
+                    </li>
+                    <li class="{{isActive request.page 'backend/landing/group'}}">
+                        <a href="/backend/landing/group">Landing Groups</a>
+                    </li>
+                    <li class="{{isActive request.page 'backend/image'}}">
+                        <a href="/backend/image">Images</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        {{{body}}}
+    </main>
+
+    <script>
+        var response = {{{toJSON response}}};
+        var request = {{{toJSON request}}};
+    </script>
+
+    <script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+    <script src="/public/dist/backend{{#if request.environment.production}}.min{{/if}}.js"></script>
+
+    {{#unless request.environment.production}}
+        <script src="//localhost:35730/livereload.js"></script>
+    {{/unless}}
+</body>
+</html>

@@ -2,17 +2,18 @@
     @extend .fadeIn;
     @extend .duration-2000;
     @extend .delayed-800;
-    max-width: 100%;
-    max-height: 100%;
     bottom: 0;
     left: 0;
     margin: auto;
     overflow: auto;
     position: fixed;
     right: 0;
+    height: 100%;
+    width: 100%;
     top: 0;
     background: no-repeat center center fixed;
     background-size: cover;
+    overflow: hidden;
 
     &:before {
         position: absolute;
@@ -42,17 +43,21 @@
         }
     }
 
-    nav {
+    .menu {
         top: 50%;
         position: absolute;
         left: 0;
         text-align: center;
         width: 100%;
+        right: 0;
 
         @include MQ(M) {
             top: 55%;
         }
 
+        ul {
+            width: 100%;
+        }
         li {
             @extend .fadeInUp;
             @extend .duration-1500;
@@ -89,7 +94,7 @@
         position: absolute;
         left: 0;
         width: 100%;
-        bottom: 5%;
+        bottom: 10%;
 
         @include MQ(M) {
             bottom: 10%;
@@ -99,6 +104,11 @@
         @extend .duration-1500;
         @extend .delayed-3000;
         text-align: center;
+
+        ul {
+            display: block;
+            width: 100%;
+        }
 
         li {
             display: inline-block;

@@ -66,8 +66,14 @@ input, textarea {
   clear: both;
   content: ''; }
 
+html {
+  height: 100%;
+  width: 100%; }
+
 body {
   font-size: 62.5%;
+  height: 100%;
+  width: 100%;
   min-width: 320px;
   background-color: #edefed; }
 
@@ -88,6 +94,10 @@ li, p, strong, span, h2, h3, h4, h5 {
   height: auto;
   overflow: hidden;
   margin-bottom: 10px; }
+
+#page {
+  height: 100%;
+  width: 100%; }
 
 [class^='row'] {
   display: block;
@@ -258,7 +268,7 @@ li, p, strong, span, h2, h3, h4, h5 {
   -webkit-animation-delay: 1.6s;
           animation-delay: 1.6s; }
 
-.delayed-1800, .full nav li {
+.delayed-1800, .full .menu li {
   -webkit-animation-delay: 1.8s;
           animation-delay: 1.8s; }
 
@@ -288,7 +298,7 @@ li, p, strong, span, h2, h3, h4, h5 {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
-.duration-1500, .full nav li, .full .social {
+.duration-1500, .full .menu li, .full .social {
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
@@ -502,7 +512,7 @@ li, p, strong, span, h2, h3, h4, h5 {
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInUp, .full nav li, .full .social {
+.fadeInUp, .full .menu li, .full .social {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1410,7 +1420,7 @@ li, p, strong, span, h2, h3, h4, h5 {
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInUp, .full nav li, .full .social {
+.fadeInUp, .full .menu li, .full .social {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1599,17 +1609,18 @@ li, p, strong, span, h2, h3, h4, h5 {
       padding: 0 .5em; }
 
 .full {
-  max-width: 100%;
-  max-height: 100%;
   bottom: 0;
   left: 0;
   margin: auto;
   overflow: auto;
   position: fixed;
   right: 0;
+  height: 100%;
+  width: 100%;
   top: 0;
   background: no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  overflow: hidden; }
   .full:before {
     position: absolute;
     top: 0;
@@ -1633,26 +1644,29 @@ li, p, strong, span, h2, h3, h4, h5 {
     @media only screen and (min-width: 640px) {
       .full .logo {
         width: 80%; } }
-  .full nav {
+  .full .menu {
     top: 50%;
     position: absolute;
     left: 0;
     text-align: center;
-    width: 100%; }
+    width: 100%;
+    right: 0; }
     @media only screen and (min-width: 640px) {
-      .full nav {
+      .full .menu {
         top: 55%; } }
-    .full nav li {
+    .full .menu ul {
+      width: 100%; }
+    .full .menu li {
       display: inline-block;
       min-width: 150px;
       padding: 0 .5em;
       margin: .8em .2em; }
       @media only screen and (min-width: 640px) {
-        .full nav li {
+        .full .menu li {
           min-width: 200px;
           padding: 0 1.5em;
           margin: .8em .4em; } }
-    .full nav a {
+    .full .menu a {
       display: block;
       color: #fff;
       position: relative;
@@ -1661,18 +1675,21 @@ li, p, strong, span, h2, h3, h4, h5 {
       text-decoration: none;
       font-weight: 300;
       border: 1px solid #fff; }
-      .full nav a:hover, .full nav a:active {
+      .full .menu a:hover, .full .menu a:active {
         font-weight: 400;
         background-color: rgba(0, 0, 0, 0.2); }
   .full .social {
     position: absolute;
     left: 0;
     width: 100%;
-    bottom: 5%;
+    bottom: 10%;
     text-align: center; }
     @media only screen and (min-width: 640px) {
       .full .social {
         bottom: 10%; } }
+    .full .social ul {
+      display: block;
+      width: 100%; }
     .full .social li {
       display: inline-block; }
     .full .social a {

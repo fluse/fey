@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var deepExtend = require('deep-extend');
-var deepPopulate = require('mongoose-deep-populate')(mongoose);
 
 /*
  * Schema
@@ -163,13 +162,6 @@ var schema = new mongoose.Schema({
     }
 });
 
-schema.plugin(deepPopulate, {
-    populate: {
-        'landingGroup': {
-            select: 'meta'
-        }
-    }
-});
 
 schema.pre('save', function (next) {
     this.meta.url = this.meta.url.replace(/[^A-Z0-9]/ig, '-').toLowerCase();

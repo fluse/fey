@@ -2,7 +2,6 @@
 
 var mongoose = require('mongoose');
 var deepExtend = require('deep-extend');
-var deepPopulate = require('mongoose-deep-populate')(mongoose);
 
 /*
  * Schema
@@ -42,16 +41,6 @@ var schema = new mongoose.Schema({
     }
 });
 
-schema.plugin(deepPopulate, {
-    populate: {
-        'list.landingPage': {
-            select: 'meta'
-        }
-    },
-    rewrite: {
-        'landings': 'list.landingPage'
-    }
-});
 
 schema.pre('save', function (next) {
     this.updatedAt = new Date();

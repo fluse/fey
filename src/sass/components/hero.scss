@@ -102,13 +102,17 @@
 
         li {
             display: inline-block;
-            padding: 0 2em;
         }
 
         a {
             color: #fff;
             font-size: 2.5em;
             text-decoration: none;
+            padding: 1em;
+            &:hover {
+                @extend .bounce;
+                @extend .duration-800;
+            }
         }
     }
 }

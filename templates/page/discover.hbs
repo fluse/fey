@@ -1,0 +1,13 @@
+<ul class="media-list grid">
+    <li class="grid-sizer"></li>
+    <li v-for="media in mediaList" class="grid-item" v-on:click="openMedia(media)">
+        <span>
+            <img :src="media.url.thumb" alt="" />
+        </span>
+        <img :src="media.url.thumb" alt="" />
+    </li>
+</ul>
+
+<section class="layer" v-show="current.url">
+    <img :src="current.url.full" alt="" />
+</section>

@@ -1,0 +1,36 @@
+.media-list {
+    background-color: #000;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 50%;
+    @include MQ(M) {
+        width: 33.3333%;
+    }
+    height: auto;
+    position: relative;
+    span {
+        position: absolute;
+        left: 2em;
+        right: 2em;
+        bottom: 2em;
+        top: 2em;
+        height: auto;
+        img {
+            visibility: visible;
+        }
+    }
+    img {
+        width: 100%;
+        visibility: hidden;
+    }
+    cursor: pointer;
+}
+
+.grid-item--width2 { width:  40%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }

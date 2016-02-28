@@ -17,7 +17,11 @@
     <![endif]-->
 
 </head>
-    {{> header}}
+<body id="body" class="{{#if response.settings.showHeader}}with-header{{/if}}">
+
+    {{#if response.settings.showHeader}}
+        {{> header}}
+    {{/if}}
 
     <main id="page">
         {{{body}}}

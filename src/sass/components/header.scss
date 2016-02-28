@@ -1,53 +1,27 @@
-#header {
-    height: 50px;
-    background-color: #fff;
-    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
-
-    @include MQ(S) {
-        height: 80px;
-    }
-
-    .inner {
-        max-width: 100%;
-        padding: 0 .5em;
-        margin: 0 auto;
-        @extend %cf;
-
-        @include MQ(S) {
-            padding: 0 3em;
-        }
-    }
+header {
+    background-color: #000;
+    height: $headerHeight;
+    display: block;
+    width: 100%;
+    top: 0;
+    position: fixed;;
+    z-index: 10;
 
     .logo {
-        width: 130px;
-        padding: 1em .2em;
-
-        img {
-            width: 100%;
-        }
-
-        @include MQ(S) {
-            padding: .5em;
-            width: 25%;
-
-            img {
-                width: 300px;
-            }
-        }
+        float: left;
+        width: 100px;
+        height: auto;
     }
 
-    .hotline {
-        padding: .2rem 0;
-        float: right;
-        width: 160px;
-        img {
-            width: 100%;
-        }
+    .menu {
+        float:right;
 
-        @include MQ(S) {
-            padding: .2rem 0;
-            float: right;
-            width: 261px;
+        a {
+            color: #fff;
+            padding: .7em .5em;
+            font-size: 1.8em;
+            text-decoration: none;
+            display: inline-block;
         }
     }
 }

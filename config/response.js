@@ -1,3 +1,3 @@
 module.exports = {
-    title: 'Christopher Fey'
+    title: 'Christopher Fey - Photgraphy'
 };

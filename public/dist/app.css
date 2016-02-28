@@ -61,7 +61,7 @@ input, textarea {
 *, *::after, *::before {
   box-sizing: border-box; }
 
-.cf:after, [class^='row']:after, #header .inner:after, input:after, .fake-input:after {
+.cf:after, [class^='row']:after, input:after, .fake-input:after {
   display: block;
   clear: both;
   content: ''; }
@@ -75,7 +75,7 @@ body {
   height: 100%;
   width: 100%;
   min-width: 320px;
-  background-color: #edefed; }
+  background-color: #000; }
 
 body, input, textarea, select, button {
   font-family: 'Open Sans', sans-serif; }
@@ -96,8 +96,17 @@ li, p, strong, span, h2, h3, h4, h5 {
   margin-bottom: 10px; }
 
 #page {
-  height: 100%;
-  width: 100%; }
+  height: auto;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto; }
+
+.with-header #page {
+  top: 50px; }
 
 [class^='row'] {
   display: block;
@@ -1510,42 +1519,26 @@ li, p, strong, span, h2, h3, h4, h5 {
   -webkit-animation-name: fadeOut;
           animation-name: fadeOut; }
 
-#header {
+header {
+  background-color: #000;
   height: 50px;
-  background-color: #fff;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5); }
-  @media only screen and (min-width: 540px) {
-    #header {
-      height: 80px; } }
-  #header .inner {
-    max-width: 100%;
-    padding: 0 .5em;
-    margin: 0 auto; }
-    @media only screen and (min-width: 540px) {
-      #header .inner {
-        padding: 0 3em; } }
-  #header .logo {
-    width: 130px;
-    padding: 1em .2em; }
-    #header .logo img {
-      width: 100%; }
-    @media only screen and (min-width: 540px) {
-      #header .logo {
-        padding: .5em;
-        width: 25%; }
-        #header .logo img {
-          width: 300px; } }
-  #header .hotline {
-    padding: .2rem 0;
-    float: right;
-    width: 160px; }
-    #header .hotline img {
-      width: 100%; }
-    @media only screen and (min-width: 540px) {
-      #header .hotline {
-        padding: .2rem 0;
-        float: right;
-        width: 261px; } }
+  display: block;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10; }
+  header .logo {
+    float: left;
+    width: 100px;
+    height: auto; }
+  header .menu {
+    float: right; }
+    header .menu a {
+      color: #fff;
+      padding: .7em .5em;
+      font-size: 1.8em;
+      text-decoration: none;
+      display: inline-block; }
 
 #footer {
   background-color: #353535; }
@@ -1758,6 +1751,60 @@ li, p, strong, span, h2, h3, h4, h5 {
 
 .icn-youtube:before {
   content: "\f110"; }
+
+.layer {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 100%;
+  background-color: #000; }
+
+.media-list {
+  background-color: #000; }
+
+.grid-sizer,
+.grid-item {
+  width: 50%;
+  height: auto;
+  position: relative;
+  cursor: pointer; }
+  @media only screen and (min-width: 640px) {
+    .grid-sizer,
+    .grid-item {
+      width: 33.3333%; } }
+  .grid-sizer span,
+  .grid-item span {
+    position: absolute;
+    left: 2em;
+    right: 2em;
+    bottom: 2em;
+    top: 2em;
+    height: auto; }
+    .grid-sizer span img,
+    .grid-item span img {
+      visibility: visible; }
+  .grid-sizer img,
+  .grid-item img {
+    width: 100%;
+    visibility: hidden; }
+
+.grid-item--width2 {
+  width: 40%; }
+
+.grid-item--width3 {
+  width: 60%; }
+
+.grid-item--height2 {
+  height: 200px; }
+
+.grid-item--height3 {
+  height: 260px; }
+
+.grid-item--height4 {
+  height: 360px; }
 
 input, .fake-input {
   font-size: 15px;

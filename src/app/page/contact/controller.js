@@ -29,10 +29,23 @@ module.exports = function (api) {
         },
         methods: {
 
-            sendMail(media) {
-                return api('post', '/mail/', {}, this.mail, (err, result) => {
+            sendMail() {
 
+                if (this.mail.from.length === 0 || this.mail.text.length === 0 || this.mail.name.length === 0 || this.mail.subject.length === 0) {
+                    this.error = true;
+                    return;
+                }
+
+                return api('post', '/mail/', {}, this.mail, (err, result) => {
+                    this.removeError();
+                    if (!err) {
+                        this.success = true;
+                    }
                 });
+            },
+
+            removeError () {
+                this.error = false;
             },
 
             init() {

@@ -11,6 +11,8 @@ module.exports = function () {
             subject: '',
             text: ''
         },
+        error: false,
+        success: false,
         settings: {
             hideHeader: false
         }

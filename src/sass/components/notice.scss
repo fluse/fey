@@ -1,0 +1,18 @@
+[class*='notice-'] {
+    padding: 1em;
+    font-size: 1rem;
+    margin-bottom: .5em;
+    p {
+        padding: 0;
+    }
+}
+
+.notice-error {
+    color: #fff;
+    background-color: $color-red;
+}
+
+.notice-success {
+    color: #fff;
+    background-color: $color-green;
+}

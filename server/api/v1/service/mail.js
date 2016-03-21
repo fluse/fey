@@ -12,8 +12,11 @@ module.exports = (app) => {
         send(data, cb) {
 
             data = extend({
-                to: 'holger.schauf@gmail.com'//'photography@feynsinn.design'
+                to: 'holger.schauf@gmail.com, photography@feynsinn.design'
             }, data);
+
+            data.from = data.name + '<' + data.from + '>';
+            data.subject = 'feynsinn.design: ' + data.subject;
             /*
             var data = {
               from: 'Excited User <me@samples.mailgun.org>',

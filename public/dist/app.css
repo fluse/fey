@@ -2057,6 +2057,21 @@ header {
     border: 3px solid #000;
     width: 90%; }
 
+[class*='notice-'] {
+  padding: 1em;
+  font-size: 1rem;
+  margin-bottom: .5em; }
+  [class*='notice-'] p {
+    padding: 0; }
+
+.notice-error {
+  color: #fff;
+  background-color: #c95335; }
+
+.notice-success {
+  color: #fff;
+  background-color: #92b000; }
+
 input, .fake-input {
   font-size: 15px;
   display: block;

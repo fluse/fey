@@ -10,13 +10,24 @@
                 </div>
             </div>
             <br />
-            <input type="text" v-model="mail.name" value="\{{mail.name}}" placeholder="Your name" />
-            <input type="text" v-model="mail.from" value="\{{mail.from}}" placeholder="Your email" />
-            <input type="text" v-model="mail.subject" value="\{{mail.subject}}" placeholder="Your subject" />
-            <textarea v-model="mail.text" placeholder="Your message to me ...">\{{mail.text}}</textarea>
-            <button v-on:click="sendMail">
-                send
-            </button>
+
+            <div class="notice-error" v-show="error">
+                <p>You have to fill all fields.</p>
+            </div>
+
+            <div class="notice-success" v-show="success">
+                <p>Mail was sent. I get in touch with you!</p>
+            </div>
+
+            <fieldset v-hide="success">
+                <input type="text" v-model="mail.name" v-on:change="removeError" value="\{{mail.name}}" placeholder="Your name" />
+                <input type="email" v-model="mail.from" v-on:change="removeError" value="\{{mail.from}}" placeholder="Your email" />
+                <input type="text" v-model="mail.subject" v-on:change="removeError" value="\{{mail.subject}}" placeholder="Your subject" />
+                <textarea v-model="mail.text" v-on:change="removeError" placeholder="Your message to me ...">\{{mail.text}}</textarea>
+                <button v-on:click="sendMail">
+                    send
+                </button>
+            </fieldset>
             <br />
         </form>
 

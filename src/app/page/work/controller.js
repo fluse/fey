@@ -28,11 +28,6 @@ module.exports = function (api) {
         },
         methods: {
 
-            sendMail(media) {
-                return api('post', '/mail/', {}, this.mail, (err, result) => {
-
-                });
-            }
         }
 
     });

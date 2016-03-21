@@ -21956,7 +21956,7 @@ if (config.devtools) {
 
 module.exports = Vue;
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"_process":19}],13:[function(require,module,exports){
+},{"_process":21}],13:[function(require,module,exports){
 /* globals request */
 
 'use strict';
@@ -21968,7 +21968,8 @@ var api = window.api = new Api(request.api);
 var controller = {
     discover: require('./page/discover/controller.js'),
     welcome: require('./page/welcome/controller.js'),
-    work: require('./page/work/controller.js')
+    work: require('./page/work/controller.js'),
+    contact: require('./page/contact/controller.js')
 };
 
 // initialize page controller
@@ -21978,7 +21979,95 @@ if (controller.hasOwnProperty(request.controller)) {
     console.info('no page controller defined');
 }
 
-},{"./page/discover/controller.js":14,"./page/welcome/controller.js":16,"./page/work/controller.js":17,"client-api":1}],14:[function(require,module,exports){
+},{"./page/contact/controller.js":14,"./page/discover/controller.js":16,"./page/welcome/controller.js":18,"./page/work/controller.js":19,"client-api":1}],14:[function(require,module,exports){
+'use strict';
+
+/* globals response, tinymce, confirm */
+
+/* dependencies */
+var Vue = require('vue');
+
+module.exports = function (api) {
+
+    /* schemas
+    var schema = require('./schema.js');
+     /* configs
+    var config = require('./config.js');
+     /* data
+    */
+    var data = require('./data.js')();
+
+    return new Vue({
+        el: '#body',
+        mixins: [],
+        data: data,
+        ready: function ready() {
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', this.init);
+        },
+
+        computed: {},
+        methods: {
+            sendMail: function sendMail(media) {
+                return api('post', '/mail/', {}, this.mail, function (err, result) {});
+            },
+            init: function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 11,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(50.94128, 6.95827), // New York
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{ "featureType": "all", "elementType": "labels.text.fill", "stylers": [{ "saturation": 36 }, { "color": "#000000" }, { "lightness": 40 }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "on" }, { "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "all", "elementType": "labels.icon", "stylers": [{ "visibility": "off" }] }, { "featureType": "administrative", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "administrative", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 17 }, { "weight": 1.2 }] }, { "featureType": "landscape", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 20 }] }, { "featureType": "poi", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 21 }] }, { "featureType": "road.highway", "elementType": "geometry.fill", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#000000" }, { "lightness": 29 }, { "weight": 0.2 }] }, { "featureType": "road.arterial", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 18 }] }, { "featureType": "road.local", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 16 }] }, { "featureType": "transit", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 19 }] }, { "featureType": "water", "elementType": "geometry", "stylers": [{ "color": "#000000" }, { "lightness": 17 }] }]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(50.94128, 6.95827),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        }
+
+    });
+};
+
+},{"./data.js":15,"vue":12}],15:[function(require,module,exports){
+'use strict';
+
+/* globals response */
+
+var extend = require('extend');
+
+module.exports = function () {
+
+    return extend({
+        mail: {
+            from: '',
+            name: '',
+            subject: '',
+            text: ''
+        },
+        settings: {
+            hideHeader: false
+        }
+    }, response);
+};
+
+},{"extend":4}],16:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
@@ -22038,7 +22127,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":15,"jquery":7,"masonry-layout":8,"vue":12}],15:[function(require,module,exports){
+},{"./data.js":17,"jquery":7,"masonry-layout":8,"vue":12}],17:[function(require,module,exports){
 'use strict';
 
 /* globals response */
@@ -22207,7 +22296,7 @@ module.exports = function () {
     }, response);
 };
 
-},{"extend":4}],16:[function(require,module,exports){
+},{"extend":4}],18:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
@@ -22255,7 +22344,7 @@ module.exports = function (api) {
     });
 };
 
-},{"jquery":7,"parallax/deploy/parallax.min.js":11,"vue":12}],17:[function(require,module,exports){
+},{"jquery":7,"parallax/deploy/parallax.min.js":11,"vue":12}],19:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
@@ -22280,16 +22369,12 @@ module.exports = function (api) {
         ready: function ready() {},
 
         computed: {},
-        methods: {
-            sendMail: function sendMail(media) {
-                return api('post', '/mail/', {}, this.mail, function (err, result) {});
-            }
-        }
+        methods: {}
 
     });
 };
 
-},{"./data.js":18,"vue":12}],18:[function(require,module,exports){
+},{"./data.js":20,"vue":12}],20:[function(require,module,exports){
 'use strict';
 
 /* globals response */
@@ -22299,19 +22384,13 @@ var extend = require('extend');
 module.exports = function () {
 
     return extend({
-        mail: {
-            from: '',
-            name: '',
-            subject: '',
-            text: ''
-        },
         settings: {
             hideHeader: false
         }
     }, response);
 };
 
-},{"extend":4}],19:[function(require,module,exports){
+},{"extend":4}],21:[function(require,module,exports){
 // shim for using process in browser
 
 var process = module.exports = {};

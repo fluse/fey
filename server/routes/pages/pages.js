@@ -57,4 +57,22 @@ module.exports = function (app) {
 
     });
 
+    app.get('/contact', routeCache.cacheSeconds(app.config.cache.pages), (req, res) => {
+
+        // get data from services
+        async.parallel({
+
+        }, (err, data) => {
+
+            res.renderPage({
+                page: 'contact'
+            }, {
+                settings: {
+                    showHeader: true
+                }
+            });
+        });
+
+    });
+
 };

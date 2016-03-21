@@ -1,0 +1,29 @@
+<section id="content" class="row">
+    <div class="contact-wrapper">
+        <form class="contact grd-1" onsubmit="return false;">
+            <div class="row" style="border-bottom: 1px solid #404040; padding-bottom: .5em">
+                <div class="wdt-30">
+                    <img src="/public/image/me.jpg" />
+                </div>
+                <div class="wdt-70">
+                    <p>Hey! You like my work? Want to hire me? <br />Or work together with me?<br />Don't be shy! Leave me a message ;) </p>
+                </div>
+            </div>
+            <br />
+            <input type="text" v-model="mail.name" value="\{{mail.name}}" placeholder="Your name" />
+            <input type="text" v-model="mail.from" value="\{{mail.from}}" placeholder="Your email" />
+            <input type="text" v-model="mail.subject" value="\{{mail.subject}}" placeholder="Your subject" />
+            <textarea v-model="mail.text" placeholder="Your message to me ...">\{{mail.text}}</textarea>
+            <button v-on:click="sendMail">
+                send
+            </button>
+            <br />
+        </form>
+
+
+    </div>
+    <div class="map-wrapper">
+        <div id="map">
+        </div>
+    </div>
+</section>

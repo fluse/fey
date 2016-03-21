@@ -1,6 +1,7 @@
 @import 'settings';
 
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,300,500';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
 
 @import 'base/reset';
 @import 'base/general';
@@ -15,8 +16,8 @@
 @import 'components/hero';
 @import 'components/icons';
 @import 'components/layer';
-@import 'components/media-list';
-@import 'components/media-show';
+@import 'components/media/list';
+@import 'components/media/show';
 
 @import 'components/form/input';
 @import 'components/form/placeholder';

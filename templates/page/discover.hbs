@@ -8,6 +8,10 @@
     </li>
 </ul>
 
-<section class="layer" v-show="current.url">
-    <img :src="current.url.full" alt="" />
+<section class="layer media-show" v-show="current.url">
+    <div class="preview">
+        <img :src="current.url.full" alt="" />
+    </div>
+    <div class="description">
+    </div>
 </section>

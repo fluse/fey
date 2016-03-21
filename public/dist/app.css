@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway:400,300,500';
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css';
 /**
 * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
 * http://cssreset.com
@@ -68,7 +69,9 @@ input, textarea {
 
 html {
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 body {
   font-size: 62.5%;
@@ -1762,6 +1765,10 @@ header {
   width: 100%;
   background-color: #000; }
 
+.with-header .layer {
+  position: fixed !important;
+  top: 50px; }
+
 .media-list {
   background-color: #000; }
 
@@ -1805,6 +1812,86 @@ header {
 
 .grid-item--height4 {
   height: 360px; }
+
+.media-show .preview {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 100%;
+  pointer-events: none; }
+  .media-show .preview img {
+    max-width: calc(50vw - 0px);
+    max-height: calc(100vh - 0px);
+    -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
+
+.media-show .description {
+  font-size: 2em;
+  position: absolute;
+  z-index: 140;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  padding: 0 1em;
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, transform 1s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -webkit-transform: translate3d(0, 30px, 0);
+  transform: translate3d(0, 30px, 0); }
+  .media-show .description h3 {
+    font-weight: normal;
+    margin: 0; }
+  .media-show .description p {
+    font-size: 0.65em;
+    max-width: 100%; }
+    .media-show .description p em {
+      color: #5D5D5D;
+      display: block;
+      padding: 0.4em 0 0 0; }
+  .media-show .description .details {
+    max-width: 100%; }
+
+.media-show .close {
+  position: absolute;
+  z-index: 150;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  opacity: 0;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  -webkit-transform: scale3d(0.6, 0.6, 1);
+  transform: scale3d(0.6, 0.6, 1); }
 
 input, .fake-input {
   font-size: 15px;

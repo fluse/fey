@@ -39,4 +39,22 @@ module.exports = function (app) {
 
     });
 
+    app.get('/work', routeCache.cacheSeconds(app.config.cache.pages), (req, res) => {
+
+        // get data from services
+        async.parallel({
+
+        }, (err, data) => {
+
+            res.renderPage({
+                page: 'work'
+            }, {
+                settings: {
+                    showHeader: true
+                }
+            });
+        });
+
+    });
+
 };

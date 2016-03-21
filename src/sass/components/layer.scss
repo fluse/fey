@@ -8,3 +8,10 @@
     width: 100%;
     background-color: #000;
 }
+
+.with-header {
+    .layer {
+        position: fixed !important;
+        top: $headerHeight;
+    }
+}

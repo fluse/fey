@@ -1,0 +1,11 @@
+<div id="content">
+    <form onsubmit="return false;">
+        <label></label>
+        <input type="text" v-model="mail.from" value="\{{mail.from}}" />
+        <input type="text" v-model="mail.subject" value="\{{mail.subject}}" />
+        <textarea v-model="mail.text">\{{mail.text}}</textarea>
+        <button v-on:click="sendMail">
+            anfragen
+        </button>
+    </form>
+</div>

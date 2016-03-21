@@ -16,14 +16,14 @@ module.exports = function () {
                 thumb: '/public/image/explore1_thumb.jpg',
                 full: '/public/image/explore1.jpg'
             },
-            title: '',
+            title: 'Nature',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '14mm',
+                aperture: 'f/6.3',
+                exposure_time: '1/500',
+                iso: 'Iso 100'
             }
         },{
             type: 'image',
@@ -31,14 +31,14 @@ module.exports = function () {
                 thumb: '/public/image/explore2_thumb.jpg',
                 full: '/public/image/explore2.jpg'
             },
-            title: '',
+            title: 'Circle of Life',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '14mm',
+                aperture: 'f/18',
+                exposure_time: '1/125',
+                iso: 'Iso 100'
             }
         },{
             type: 'image',
@@ -46,14 +46,14 @@ module.exports = function () {
                 thumb: '/public/image/explore3_thumb.jpg',
                 full: '/public/image/explore3.jpg'
             },
-            title: '',
+            title: 'Frozen Water',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '200mm',
+                aperture: 'f/14',
+                exposure_time: '13 s',
+                iso: 'Iso 160'
             }
         },{
             type: 'image',
@@ -61,14 +61,14 @@ module.exports = function () {
                 thumb: '/public/image/explore4_thumb.jpg',
                 full: '/public/image/explore4.jpg'
             },
-            title: '',
+            title: 'Auenland',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '45mm',
+                aperture: 'f/20',
+                exposure_time: '1/100',
+                iso: 'Iso 8000'
             }
         },{
             type: 'image',
@@ -91,14 +91,14 @@ module.exports = function () {
                 thumb: '/public/image/explore6_thumb.jpg',
                 full: '/public/image/explore6.jpg'
             },
-            title: '',
+            title: 'Farbenspiel',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '200mm',
+                aperture: 'f/10',
+                exposure_time: '6s',
+                iso: 'Iso 160'
             }
         },{
             type: 'image',
@@ -106,14 +106,14 @@ module.exports = function () {
                 thumb: '/public/image/explore7_thumb.jpg',
                 full: '/public/image/explore7.jpg'
             },
-            title: '',
+            title: 'Mirror',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '28mm',
+                aperture: 'f/22',
+                exposure_time: '1/8',
+                iso: 'Iso 320'
             }
         },{
             type: 'image',
@@ -121,14 +121,14 @@ module.exports = function () {
                 thumb: '/public/image/explore8_thumb.jpg',
                 full: '/public/image/explore8.jpg'
             },
-            title: '',
+            title: 'Sundancer',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '24mm',
+                aperture: 'f/5',
+                exposure_time: '1/320',
+                iso: 'Iso 160'
             }
         },{
             type: 'image',
@@ -136,14 +136,14 @@ module.exports = function () {
                 thumb: '/public/image/explore9_thumb.jpg',
                 full: '/public/image/explore9.jpg'
             },
-            title: '',
+            title: 'Triangle',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '28mm',
+                aperture: 'f/2.8',
+                exposure_time: '1/320',
+                iso: 'Iso 160'
             }
         },{
             type: 'image',
@@ -151,14 +151,14 @@ module.exports = function () {
                 thumb: '/public/image/explore10_thumb.jpg',
                 full: '/public/image/explore10.jpg'
             },
-            title: '',
+            title: 'Power',
             description: '',
             camSettings: {
                 name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                focal: '65mm',
+                aperture: 'f/16',
+                exposure_time: '1/1000',
+                iso: 'Iso 1600'
             }
         }]
     }, response);

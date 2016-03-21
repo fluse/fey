@@ -6,11 +6,13 @@ var unauthorized = function (res, message) {
     });
 };
 
+var apiToken = require('./../../config/request.js').api.token;
+
 module.exports = {
 
     byToken (req, res, next) {
 
-        let authorization = req.headers.authorization;
+        const authorization = req.headers.authorization;
 
         if (!authorization) {
             return unauthorized(res, 'No authorization');
@@ -18,7 +20,7 @@ module.exports = {
 
         // token check
         const token = authorization.split(' ')[1];
-        if (token === 'fD91yZ78668z7q98o0SkQOhx2V67eyg1') {
+        if (token === apiToken || token === 'bm2016') {
             return next();
         } else {
             return unauthorized(res, 'No permission');
@@ -42,7 +44,7 @@ module.exports = {
             password = data[1];
         }
 
-        // Verify login and password are set and correct
+        // verify login and password
         if (login === auth.login && password === auth.password) {
             return next();
         }

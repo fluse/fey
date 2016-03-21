@@ -1888,7 +1888,7 @@ header {
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
     @media only screen and (min-width: 1000px) {
       .media-show .preview img {
-        max-width: calc(70vw - 0px); } }
+        max-width: 100%; } }
 
 .media-show .description {
   font-size: 1.2em;

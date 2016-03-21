@@ -3,8 +3,8 @@
     font-family:"icons";
         src: url("../font/icons.eot");
         src: url("../font/icons.eot?#iefix") format("embedded-opentype"),
-        url("../font/icons.woff") format("woff"),
-        url("../font/icons.ttf") format("truetype");
+		url("../font/icons.woff") format("woff"),
+		url("../font/icons.ttf") format("truetype");
     font-weight: 300;
     font-style: normal;
 }
@@ -81,3 +81,5 @@
 .icn-youtube:before {
     content: "\f110";
 }
+
+

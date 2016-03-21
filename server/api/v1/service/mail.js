@@ -1,19 +1,11 @@
-var nodemailer = require('nodemailer'),
-    extend = require('extend');
+var extend = require('extend');
 
 module.exports = (app) => {
 
-    var smtpConfig = {
-        host: 'smtp.udag.de',
-        port: 465,
-        secure: true, // use SSL
-        auth: {
-            user: 'feynsinn-design-0001',
-            pass: 'feynsinn!design!2016'
-        }
-    };
-
-    var transporter = nodemailer.createTransport(smtpConfig);
+    var mailgun = require('mailgun-js')({
+        apiKey: app.config.service.mailgun.api_key,
+        domain: app.config.service.mailgun.domain
+    });
 
     return {
 
@@ -22,9 +14,15 @@ module.exports = (app) => {
             data = extend({
                 to: 'holger.schauf@gmail.com'//'photography@feynsinn.design'
             }, data);
+            /*
+            var data = {
+              from: 'Excited User <me@samples.mailgun.org>',
+              to: 'serobnic@mail.ru',
+              subject: 'Hello',
+              text: 'Testing some Mailgun awesomness!'
+          };*/
 
-            // send mail with defined transport object
-            transporter.sendMail(data, cb);
+            mailgun.messages().send(data, cb);
         }
 
     };

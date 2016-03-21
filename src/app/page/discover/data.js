@@ -19,7 +19,7 @@ module.exports = function () {
             title: 'Nature',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '14mm',
                 aperture: 'f/6.3',
                 exposure_time: '1/500',
@@ -34,7 +34,7 @@ module.exports = function () {
             title: 'Circle of Life',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '14mm',
                 aperture: 'f/18',
                 exposure_time: '1/125',
@@ -49,7 +49,7 @@ module.exports = function () {
             title: 'Frozen Water',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '200mm',
                 aperture: 'f/14',
                 exposure_time: '13 s',
@@ -64,7 +64,7 @@ module.exports = function () {
             title: 'Auenland',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '45mm',
                 aperture: 'f/20',
                 exposure_time: '1/100',
@@ -76,14 +76,14 @@ module.exports = function () {
                 thumb: '/public/image/explore5_thumb.jpg',
                 full: '/public/image/explore5.jpg'
             },
-            title: '',
+            title: 'Beach',
             description: '',
             camSettings: {
-                name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
             }
         },{
             type: 'image',
@@ -94,7 +94,7 @@ module.exports = function () {
             title: 'Farbenspiel',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '200mm',
                 aperture: 'f/10',
                 exposure_time: '6s',
@@ -109,7 +109,7 @@ module.exports = function () {
             title: 'Mirror',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '28mm',
                 aperture: 'f/22',
                 exposure_time: '1/8',
@@ -124,7 +124,7 @@ module.exports = function () {
             title: 'Sundancer',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '24mm',
                 aperture: 'f/5',
                 exposure_time: '1/320',
@@ -139,7 +139,7 @@ module.exports = function () {
             title: 'Triangle',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '28mm',
                 aperture: 'f/2.8',
                 exposure_time: '1/320',
@@ -154,7 +154,7 @@ module.exports = function () {
             title: 'Power',
             description: '',
             camSettings: {
-                name: '',
+                name: 'Canon 6D',
                 focal: '65mm',
                 aperture: 'f/16',
                 exposure_time: '1/1000',

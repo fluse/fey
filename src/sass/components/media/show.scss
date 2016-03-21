@@ -1,68 +1,87 @@
 .media-show {
 
     .preview {
-        position: fixed;
-        z-index: 1000;
+        position: absolute;;
         top: 0;
         left: 0;
         display: -ms-flex;
         display: -webkit-flex;
         display: flex;
         justify-content: center;
+        padding-left: 1em;
         align-content: center;
         align-items: center;
-        width: 50%;
+        width: 60%;
+        @include MQ(L) {
+            width: 70%;
+        }
         height: 100%;
         pointer-events: none;
 
         img {
-            max-width: calc(50vw - 0px);
             max-height: calc(100vh - 0px);
+            border: 5px solid #000;
+            @include MQ(L) {
+                max-width: calc(70vw - 0px);
+            }
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
         }
     }
 
     .description {
-        font-size: 2em;
+        font-size: 1.2em;
         position: absolute;
-        z-index: 140;
-        width: 100%;
-        left: 100%;
+        width: 40%;
+        background: rgba(0, 0, 0, 0.2);
+
+        @include MQ(M) {
+            font-size: 1.6em;
+        }
+        @include MQ(L) {
+            font-size: 2em;
+            width: 30%;
+
+        }
+        right: 0;
         top: 0;
-        height: 100%;
+        bottom: 0;
+        height: auto;
         padding: 0 1em;
         display: -ms-flex;
         display: -webkit-flex;
         display: flex;
-        -ms-flex-direction: column;
         -webkit-flex-direction: column;
         flex-direction: column;
-        -ms-flex-pack: center;
         -webkit-justify-content: center;
         justify-content: center;
         -ms-flex-align: start;
         -webkit-align-items: flex-start;
         align-items: flex-start;
-        opacity: 0;
-        transition: opacity 1s, transform 1s;
-        transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-        -webkit-transform: translate3d(0, 30px, 0);
-        transform: translate3d(0, 30px, 0);
 
         @import 'description';
     }
 
     .close {
-        position: absolute;;
+        position: absolute;
         z-index: 150;
         top: 0;
-        right: 0;
-        padding: 1em;
-        opacity: 0;
-        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        right: 20px;
+        padding: 1em 1.4em;
+        opacity: 1;
+        border-radius: 4px;
         transition: opacity 0.3s, transform 0.3s;
         -webkit-transform: scale3d(0.6, 0.6, 1);
         transform: scale3d(0.6, 0.6, 1);
+        cursor: pointer;
+        background-color: $color-background;
+
+        @include MQ(ML) {
+            background-color: transparent;
+        }
+
+        i {
+            font-size: 5em;
+        }
     }
 
 }

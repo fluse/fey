@@ -48,7 +48,12 @@ module.exports = function (api) {
         methods: {
 
             openMedia(media) {
+                console.log(media);
                 this.current = media;
+            },
+
+            closeMedia() {
+                this.current = null;
             }
         }
 

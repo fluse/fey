@@ -1,5 +1,5 @@
 header {
-    background-color: #000;
+    background-color: darken($color-background, 10%);
     height: $headerHeight;
     display: block;
     width: 100%;
@@ -18,7 +18,7 @@ header {
 
         a {
             color: #fff;
-            padding: .7em .5em;
+            padding: .7em 1em;
             font-size: 1.8em;
             text-decoration: none;
             display: inline-block;

@@ -1,5 +1,4 @@
 .media-list {
-    background-color: #000;
 }
 
 .grid-sizer,
@@ -12,10 +11,10 @@
     position: relative;
     span {
         position: absolute;
-        left: 2em;
-        right: 2em;
-        bottom: 2em;
-        top: 2em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
         height: auto;
         img {
             visibility: visible;
@@ -24,8 +23,16 @@
     img {
         width: 100%;
         visibility: hidden;
+        filter: grayscale(100%);
     }
     cursor: pointer;
+
+    &:hover {
+        img {
+            transition: .8s ease-in-out;
+            filter: grayscale(0%);
+        }
+    }
 }
 
 .grid-item--width2 { width:  40%; }

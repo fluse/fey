@@ -9,9 +9,40 @@
 </ul>
 
 <section class="layer media-show" v-show="current.url">
+
+    <span class="close" v-on:click="closeMedia">
+        <i class="fa fa-times"></i>
+    </span>
+
     <div class="preview">
         <img :src="current.url.full" alt="" />
     </div>
     <div class="description">
+        <h3>\{{current.title}}</h3>
+        <p>\{{current.description}} &nbsp;</p>
+        <div class="details">
+            <ul>
+                <li>
+                    <i class="icon icon-camera"></i>
+                    <span>\{{current.camSettings.name}}</span>
+                </li>
+                <li>
+                    <i class="icon icon-focal_length"></i>
+                    <span>\{{current.camSettings.focal}}</span>
+                </li>
+                <li>
+                    <i class="icon icon-aperture"></i>
+                    <span>\{{current.camSettings.aperture}}</span>
+                </li>
+                <li>
+                    <i class="icon icon-exposure_time"></i>
+                    <span>\{{current.camSettings.exposure_time}}</span>
+                </li>
+                <li>
+                    <i class="icon icon-iso"></i>
+                    <span>\{{current.camSettings.iso}}</span>
+                </li>
+            </ul>
+        </div>
     </div>
 </section>

@@ -78,13 +78,14 @@ body {
   height: 100%;
   width: 100%;
   min-width: 320px;
-  background-color: #000; }
+  color: #fff;
+  background-color: #201f1f; }
 
-body, input, textarea, select, button {
+body * {
   font-family: 'Open Sans', sans-serif; }
 
 li, p, strong, span, h2, h3, h4, h5 {
-  color: #353535;
+  color: #fff;
   display: inline-block; }
 
 .no-scroll {
@@ -1523,7 +1524,7 @@ li, p, strong, span, h2, h3, h4, h5 {
           animation-name: fadeOut; }
 
 header {
-  background-color: #000;
+  background-color: #060606;
   height: 50px;
   display: block;
   width: 100%;
@@ -1538,7 +1539,7 @@ header {
     float: right; }
     header .menu a {
       color: #fff;
-      padding: .7em .5em;
+      padding: .7em 1em;
       font-size: 1.8em;
       text-decoration: none;
       display: inline-block; }
@@ -1755,6 +1756,42 @@ header {
 .icn-youtube:before {
   content: "\f110"; }
 
+@font-face {
+  font-family: "camera-icons";
+  src: url("../font/camera-icons/camera-icons.eot");
+  src: url("../font/camera-icons/camera-icons.eot?#iefix") format("embedded-opentype"), url("../font/camera-icons/camera-icons.woff") format("woff"), url("../font/camera-icons/camera-icons.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+
+.icon {
+  font-family: 'camera-icons';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+  text-transform: none;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  speak: none; }
+
+.icon-focal_length:before {
+  content: '\e600'; }
+
+.icon-exposure_time:before {
+  content: '\e601'; }
+
+.icon-iso:before {
+  content: '\e602'; }
+
+.icon-camera:before {
+  content: '\e603'; }
+
+.icon-aperture:before {
+  content: '\e604'; }
+
 .layer {
   position: absolute !important;
   top: 0;
@@ -1763,14 +1800,11 @@ header {
   bottom: 0;
   height: auto;
   width: 100%;
-  background-color: #000; }
+  background-color: #201f1f; }
 
 .with-header .layer {
   position: fixed !important;
   top: 50px; }
-
-.media-list {
-  background-color: #000; }
 
 .grid-sizer,
 .grid-item {
@@ -1785,10 +1819,10 @@ header {
   .grid-sizer span,
   .grid-item span {
     position: absolute;
-    left: 2em;
-    right: 2em;
-    bottom: 2em;
-    top: 2em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
     height: auto; }
     .grid-sizer span img,
     .grid-item span img {
@@ -1796,7 +1830,14 @@ header {
   .grid-sizer img,
   .grid-item img {
     width: 100%;
-    visibility: hidden; }
+    visibility: hidden;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+  .grid-sizer:hover img,
+  .grid-item:hover img {
+    transition: .8s ease-in-out;
+    -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
 
 .grid-item--width2 {
   width: 40%; }
@@ -1814,8 +1855,7 @@ header {
   height: 360px; }
 
 .media-show .preview {
-  position: fixed;
-  z-index: 1000;
+  position: absolute;
   top: 0;
   left: 0;
   display: -ms-flex;
@@ -1825,52 +1865,63 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-left: 1em;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 60%;
   height: 100%;
   pointer-events: none; }
+  @media only screen and (min-width: 1000px) {
+    .media-show .preview {
+      width: 70%; } }
   .media-show .preview img {
-    max-width: calc(50vw - 0px);
     max-height: calc(100vh - 0px);
+    border: 5px solid #000;
     -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
+    @media only screen and (min-width: 1000px) {
+      .media-show .preview img {
+        max-width: calc(70vw - 0px); } }
 
 .media-show .description {
-  font-size: 2em;
+  font-size: 1.2em;
   position: absolute;
-  z-index: 140;
-  width: 100%;
-  left: 100%;
+  width: 40%;
+  background: rgba(0, 0, 0, 0.2);
+  right: 0;
   top: 0;
-  height: 100%;
+  bottom: 0;
+  height: auto;
   padding: 0 1em;
   display: -ms-flex;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
   -webkit-flex-direction: column;
-  flex-direction: column;
-  -ms-flex-pack: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -webkit-justify-content: center;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   -ms-flex-align: start;
   -webkit-align-items: flex-start;
-  align-items: flex-start;
-  opacity: 0;
-  transition: opacity 1s, -webkit-transform 1s;
-  transition: opacity 1s, transform 1s;
-  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-  -webkit-transform: translate3d(0, 30px, 0);
-  transform: translate3d(0, 30px, 0); }
+  align-items: flex-start; }
+  @media only screen and (min-width: 640px) {
+    .media-show .description {
+      font-size: 1.6em; } }
+  @media only screen and (min-width: 1000px) {
+    .media-show .description {
+      font-size: 2em;
+      width: 30%; } }
   .media-show .description h3 {
     font-weight: normal;
-    margin: 0; }
+    margin: 0;
+    font-size: 2em;
+    padding-bottom: 1em; }
   .media-show .description p {
     font-size: 0.65em;
     max-width: 100%; }
@@ -1880,18 +1931,35 @@ header {
       padding: 0.4em 0 0 0; }
   .media-show .description .details {
     max-width: 100%; }
+    .media-show .description .details ul {
+      line-height: 1;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style: none; }
+    .media-show .description .details ul li:first-child {
+      font-weight: bold;
+      color: #909090; }
+    .media-show .description .details .icon {
+      margin-right: 5px;
+      color: #8D1812; }
 
 .media-show .close {
   position: absolute;
   z-index: 150;
   top: 0;
-  right: 0;
-  padding: 1em;
-  opacity: 0;
+  right: 20px;
+  padding: 1em 1.4em;
+  opacity: 1;
+  border-radius: 4px;
   transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
   -webkit-transform: scale3d(0.6, 0.6, 1);
-  transform: scale3d(0.6, 0.6, 1); }
+  transform: scale3d(0.6, 0.6, 1);
+  cursor: pointer;
+  background-color: #201f1f; }
+  .media-show .close i {
+    font-size: 5em; }
 
 input, .fake-input {
   font-size: 15px;

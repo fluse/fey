@@ -7,6 +7,7 @@ module.exports = function () {
     return extend({
         mail: {
             from: '',
+            name: '',
             subject: '',
             text: ''
         },

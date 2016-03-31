@@ -246,6 +246,26 @@ li, p, strong, span, h2, h3, h4, h5 {
     .pdg-30-btm {
       padding-bottom: 3rem; } }
 
+.article {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2em .5em; }
+
+@inclue MQ(M) {
+  .article {
+    padding: 2em 0; } }
+  .article h2 {
+    font-size: 1.2rem;
+    padding-bottom: .8rem; }
+  .article p {
+    font-size: .9rem;
+    line-height: 1.4rem; }
+  .article img {
+    max-width: 100%; }
+
+.image-border {
+  border: 4px solid #000; }
+
 .animated {
   -webkit-animation-duration: .4s;
           animation-duration: .4s;

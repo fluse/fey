@@ -160,6 +160,156 @@ module.exports = function () {
                 exposure_time: '1/1000',
                 iso: 'Iso 1600'
             }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/image1_thumb.jpg',
+                full: '/public/image/image1.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/image2_thumb.jpg',
+                full: '/public/image/image2.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/IMG_7686_thumb.jpg',
+                full: '/public/image/IMG_7686.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/IMG_7699_thumb.jpg',
+                full: '/public/image/IMG_7699.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Back_shot_HP_thumb.jpg',
+                full: '/public/image/Back_shot_HP.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cover_Shot_HP_thumb.jpg',
+                full: '/public/image/Cover_Shot_HP.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Designer_1_HP_thumb.jpg',
+                full: '/public/image/Designer_1_HP.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/DSC_0098_thumb.jpg',
+                full: '/public/image/DSC_0098.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/IMG_6896_thumb.jpg',
+                full: '/public/image/IMG_6896.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/IMG_6898_thumb.jpg',
+                full: '/public/image/IMG_6898.jpg'
+            },
+            title: 'n/a',
+            description: '',
+            camSettings: {
+                name: 'Smartphone',
+                focal: 'n/a',
+                aperture: 'n/a',
+                exposure_time: 'n/a',
+                iso: 'n/a'
+            }
         }]
     }, response);
 };

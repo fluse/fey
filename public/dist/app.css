@@ -250,21 +250,36 @@ li, p, strong, span, h2, h3, h4, h5 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 2em .5em; }
-
-@inclue MQ(M) {
-  .article {
-    padding: 2em 0; } }
+  @media only screen and (min-width: 640px) {
+    .article {
+      padding: 2em 0; } }
   .article h2 {
+    display: block;
     font-size: 1.2rem;
     padding-bottom: .8rem; }
   .article p {
     font-size: .9rem;
-    line-height: 1.4rem; }
+    line-height: 1.4rem;
+    padding: 0 0 .4em 0; }
+  .article a {
+    color: #fff; }
   .article img {
     max-width: 100%; }
 
 .image-border {
   border: 4px solid #000; }
+
+#content .wdt-30 {
+  width: 100%; }
+  @media only screen and (min-width: 640px) {
+    #content .wdt-30 {
+      width: 30%; } }
+
+#content .wdt-70 {
+  width: 100%; }
+  @media only screen and (min-width: 640px) {
+    #content .wdt-70 {
+      width: 70%; } }
 
 .animated {
   -webkit-animation-duration: .4s;
@@ -1555,17 +1570,25 @@ header {
   position: fixed;
   z-index: 10; }
   header .logo {
-    float: left;
-    width: 100px;
-    height: auto; }
+    float: left; }
+    header .logo img {
+      width: 70px;
+      height: auto; }
+      @media only screen and (min-width: 640px) {
+        header .logo img {
+          width: 100px; } }
   header .menu {
     float: right; }
     header .menu a {
       color: #fff;
-      padding: .7em 1em;
-      font-size: 1.8em;
+      padding: 1.3em .3em;
+      font-size: 1.4em;
       text-decoration: none;
       display: inline-block; }
+      @media only screen and (min-width: 640px) {
+        header .menu a {
+          font-size: 1.8em;
+          padding: .7em 1em; } }
 
 #footer {
   background-color: #353535; }
@@ -1888,53 +1911,56 @@ header {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 1em;
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: 100%;
   height: 100%;
   pointer-events: none; }
+  @media only screen and (min-width: 640px) {
+    .media-show .preview {
+      width: 60%;
+      padding-left: 1em; } }
   @media only screen and (min-width: 1000px) {
     .media-show .preview {
       width: 70%; } }
   .media-show .preview img {
     max-height: calc(100vh - 0px);
+    max-width: 100%;
     border: 5px solid #000;
     -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
-    @media only screen and (min-width: 1000px) {
-      .media-show .preview img {
-        max-width: 100%; } }
 
 .media-show .description {
-  font-size: 1.2em;
   position: absolute;
-  width: 40%;
-  background: rgba(0, 0, 0, 0.2);
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: auto;
-  padding: 0 1em;
-  display: -ms-flex;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  align-items: flex-start; }
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2); }
   @media only screen and (min-width: 640px) {
     .media-show .description {
+      font-size: 1.2em;
+      width: 40%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      height: auto;
+      padding: 0 1em;
+      display: -ms-flex;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      align-items: flex-start;
       font-size: 1.6em; } }
   @media only screen and (min-width: 1000px) {
     .media-show .description {

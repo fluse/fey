@@ -75,4 +75,22 @@ module.exports = function (app) {
 
     });
 
+    app.get('/imprint', routeCache.cacheSeconds(app.config.cache.pages), (req, res) => {
+
+        // get data from services
+        async.parallel({
+
+        }, (err, data) => {
+
+            res.renderPage({
+                page: 'imprint'
+            }, {
+                settings: {
+                    showHeader: true
+                }
+            });
+        });
+
+    });
+
 };

@@ -9,8 +9,15 @@ header {
 
     .logo {
         float: left;
-        width: 100px;
-        height: auto;
+
+        img {
+
+            width: 70px;
+            height: auto;
+            @include MQ(M) {
+                width: 100px;
+            }
+        }
     }
 
     .menu {
@@ -18,10 +25,15 @@ header {
 
         a {
             color: #fff;
-            padding: .7em 1em;
-            font-size: 1.8em;
+            padding: 1.3em .3em;
+            font-size: 1.4em;
             text-decoration: none;
             display: inline-block;
+
+            @include MQ(M) {
+                font-size: 1.8em;
+                padding: .7em 1em;
+            }
         }
     }
 }

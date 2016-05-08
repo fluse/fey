@@ -22038,7 +22038,7 @@ module.exports = function () {
             title: 'Beach',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22128,52 +22128,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
-                focal: 'n/a',
-                aperture: 'n/a',
-                exposure_time: 'n/a',
-                iso: 'n/a'
-            }
-        }, {
-            type: 'image',
-            url: {
-                thumb: '/public/image/image2_thumb.jpg',
-                full: '/public/image/image2.jpg'
-            },
-            title: 'n/a',
-            description: '',
-            camSettings: {
-                name: 'Smartphone',
-                focal: 'n/a',
-                aperture: 'n/a',
-                exposure_time: 'n/a',
-                iso: 'n/a'
-            }
-        }, {
-            type: 'image',
-            url: {
-                thumb: '/public/image/IMG_7686_thumb.jpg',
-                full: '/public/image/IMG_7686.jpg'
-            },
-            title: 'n/a',
-            description: '',
-            camSettings: {
-                name: 'Smartphone',
-                focal: 'n/a',
-                aperture: 'n/a',
-                exposure_time: 'n/a',
-                iso: 'n/a'
-            }
-        }, {
-            type: 'image',
-            url: {
-                thumb: '/public/image/IMG_7699_thumb.jpg',
-                full: '/public/image/IMG_7699.jpg'
-            },
-            title: 'n/a',
-            description: '',
-            camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22188,7 +22143,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22203,7 +22158,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22218,7 +22173,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22233,7 +22188,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22248,7 +22203,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',
@@ -22263,7 +22218,7 @@ module.exports = function () {
             title: 'n/a',
             description: '',
             camSettings: {
-                name: 'Smartphone',
+                name: 'Snapshot',
                 focal: 'n/a',
                 aperture: 'n/a',
                 exposure_time: 'n/a',

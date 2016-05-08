@@ -8,10 +8,15 @@
         display: -webkit-flex;
         display: flex;
         justify-content: center;
-        padding-left: 1em;
         align-content: center;
         align-items: center;
-        width: 60%;
+        width: 100%;
+
+        @include MQ(M) {
+            width: 60%;
+            padding-left: 1em;
+        }
+
         @include MQ(L) {
             width: 70%;
         }
@@ -20,21 +25,38 @@
 
         img {
             max-height: calc(100vh - 0px);
+            max-width: 100%;
             border: 5px solid #000;
-            @include MQ(L) {
-                max-width: 100%;
-            }
+
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
         }
     }
 
     .description {
-        font-size: 1.2em;
         position: absolute;
-        width: 40%;
+        width: 100%;
+        padding: 20px;
         background: rgba(0, 0, 0, 0.2);
 
         @include MQ(M) {
+            font-size: 1.2em;
+
+            width: 40%;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            height: auto;
+            padding: 0 1em;
+            display: -ms-flex;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -ms-flex-align: start;
+            -webkit-align-items: flex-start;
+            align-items: flex-start;
             font-size: 1.6em;
         }
         @include MQ(L) {
@@ -42,21 +64,7 @@
             width: 30%;
 
         }
-        right: 0;
-        top: 0;
-        bottom: 0;
-        height: auto;
-        padding: 0 1em;
-        display: -ms-flex;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -ms-flex-align: start;
-        -webkit-align-items: flex-start;
-        align-items: flex-start;
+
 
         @import 'description';
     }

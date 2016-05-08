@@ -3,11 +3,12 @@
     margin: 0 auto;
     padding: 2em .5em;
 
-    @inclue MQ(M) {
+    @include MQ(M) {
         padding: 2em 0;
     }
 
     h2 {
+        display: block;
         font-size: 1.2rem;
         padding-bottom: .8rem;
     }
@@ -15,6 +16,11 @@
     p {
         font-size: .9rem;
         line-height: 1.4rem;
+        padding: 0 0 .4em 0;
+    }
+
+    a {
+        color: #fff;
     }
 
     img {
@@ -24,4 +30,20 @@
 
 .image-border {
     border: 4px solid #000;
+}
+
+#content {
+    .wdt-30 {
+        width: 100%;
+        @include MQ(M) {
+            width: 30%;
+        }
+    }
+
+    .wdt-70 {
+        width: 100%;
+        @include MQ(M) {
+            width: 70%;
+        }
+    }
 }

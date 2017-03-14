@@ -24035,7 +24035,6 @@ if (controller.hasOwnProperty(request.controller)) {
 
 /* dependencies */
 var Vue = require('vue');
-
 module.exports = function (api) {
 
     /* schemas
@@ -24050,6 +24049,7 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
+
         ready: function ready() {
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', this.init);
@@ -24125,6 +24125,7 @@ module.exports = function () {
             subject: '',
             text: ''
         },
+        isSelectedMenuItem: true,
         error: false,
         success: false,
         settings: {

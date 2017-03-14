@@ -6,7 +6,7 @@
     <nav class="menu">
         <ul>
             <li>
-                <a href="/work">
+                <a  href="/work">
                     work
                 </a>
             </li>
@@ -16,7 +16,7 @@
                 </a>
             </li>
             <li>
-                <a id="menuContact" href="/contact">
+                <a v-bind:class="{ selectedMenuItem: isSelectedMenuItem }" href="/contact">
                     contact
                 </a>
             </li>

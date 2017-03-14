@@ -2,8 +2,6 @@
 
 /* dependencies */
 var Vue = require('vue');
-var menuItem = document.getElementById('menuContact');
-menuItem.style.color = '#1784c7';
 module.exports = function (api) {
 
     /* schemas
@@ -20,7 +18,8 @@ module.exports = function (api) {
     return new Vue({
         el: '#body',
         mixins: [],
-        data: data,
+        data:data,
+
         ready () {
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', this.init);

@@ -24178,7 +24178,7 @@ module.exports = function (api) {
                     _this.layout.layout();
                 }, 2000);
             });
-            ready: true;
+            isReady: true;
         },
 
         computed: {},

@@ -23,7 +23,7 @@ module.exports = function (api) {
         ready () {
             // When the window has finished loading create our google map below
 	    var menuItem = document.getElementById('menuContact');
-		menuitem.style.color = '#1784c7';
+		menuItem.style.color = '#1784c7';
             google.maps.event.addDomListener(window, 'load', this.init);
         },
         computed: {

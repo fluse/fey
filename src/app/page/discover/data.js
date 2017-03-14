@@ -5,6 +5,7 @@ var extend = require('extend');
 module.exports = function () {
 
     return extend({
+	isSelectedMenuItemContactDiscover : true,
         current: {},
         settings: {
             hideHeader: false

@@ -11,7 +11,7 @@ module.exports = function () {
             subject: '',
             text: ''
         },
-	isSelectedMenuItem : true,
+	isSelectedMenuItemContact : true,
         error: false,
         success: false,
         settings: {

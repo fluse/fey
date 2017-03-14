@@ -24125,7 +24125,7 @@ module.exports = function () {
             subject: '',
             text: ''
         },
-        isSelectedMenuItem: true,
+        isSelectedMenuItemContact: true,
         error: false,
         success: false,
         settings: {
@@ -24204,6 +24204,7 @@ var extend = require('extend');
 module.exports = function () {
 
     return extend({
+        isSelectedMenuItemContactDiscover: true,
         current: {},
         settings: {
             hideHeader: false
@@ -24555,6 +24556,7 @@ var extend = require('extend');
 module.exports = function () {
 
     return extend({
+        isSelectedMenuItemContactWork: true,
         settings: {
             hideHeader: false
         }

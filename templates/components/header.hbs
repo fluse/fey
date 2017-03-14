@@ -5,17 +5,17 @@
 
     <nav class="menu">
         <ul>
-            <li>
+            <li v-bind:class="{ selectedMenuItem: isSelectedMenuItemContactWork }">
                 <a  href="/work">
                     work
                 </a>
             </li>
-            <li>
+            <li v-bind:class="{ selectedMenuItem: isSelectedMenuItemContactDiscover }">
                 <a href="/discover">
                     discover
                 </a>
             </li>
-            <li v-bind:class="{ selectedMenuItem: isSelectedMenuItem }">
+            <li v-bind:class="{ selectedMenuItem: isSelectedMenuItemContact }">
                 <a  href="/contact">
                     contact
                 </a>

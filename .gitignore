@@ -4,3 +4,4 @@ node_modules
 doc/
 bower_components
 npm-debug.log
+package.json

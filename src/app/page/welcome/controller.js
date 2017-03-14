@@ -3,7 +3,6 @@
 /* dependencies */
 var Vue = require('vue');
 var jQuery = require('jquery');
-var parallax = require('parallax/deploy/parallax.min.js');
 
 module.exports = function (api) {
 

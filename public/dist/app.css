@@ -110,7 +110,7 @@ li, p, strong, span, h2, h3, h4, h5 {
   overflow-y: auto; }
 
 .with-header #page {
-  top: 50px; }
+  top: 38px; }
 
 [class^='row'] {
   display: block;
@@ -861,7 +861,7 @@ li, p, strong, span, h2, h3, h4, h5 {
 
 header {
   background-color: #060606;
-  height: 50px;
+  height: 38px;
   display: block;
   width: 100%;
   top: 0;
@@ -1147,7 +1147,7 @@ header {
 
 .with-header .layer {
   position: fixed !important;
-  top: 50px; }
+  top: 38px; }
 
 .grid-sizer,
 .grid-item {

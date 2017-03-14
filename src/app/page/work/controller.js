@@ -21,8 +21,6 @@ module.exports = function (api) {
         mixins: [],
         data: data,
         ready () {
-var menuItem = document.getElementById('menuWork');
-		menuItem.style.color = '#1784c7';
 
         },
         computed: {

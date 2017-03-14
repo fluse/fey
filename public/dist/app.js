@@ -24052,8 +24052,6 @@ module.exports = function (api) {
         data: data,
         ready: function ready() {
             // When the window has finished loading create our google map below
-            var menuItem = document.getElementById('menuContact');
-            menuItem.style.color = '#1784c7';
             google.maps.event.addDomListener(window, 'load', this.init);
         },
 
@@ -24161,9 +24159,6 @@ module.exports = function (api) {
         data: data,
         ready: function ready() {
             var _this = this;
-
-            var menuItem = document.getElementById('menuDiscover');
-            menuItem.style.color = '#1784c7';
 
             // init with selector
             this.layout = new Masonry('.grid', {
@@ -24541,10 +24536,7 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
-        ready: function ready() {
-            var menuItem = document.getElementById('menuWork');
-            menuItem.style.color = '#1784c7';
-        },
+        ready: function ready() {},
 
         computed: {},
         methods: {}

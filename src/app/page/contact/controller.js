@@ -1,6 +1,5 @@
 /* globals response, tinymce, confirm */
-  var menuItem = document.getElementById('menuContact');
-		menuItem.style.color = '#1784c7';
+
 /* dependencies */
 var Vue = require('vue');
 
@@ -23,7 +22,6 @@ module.exports = function (api) {
         data: data,
         ready () {
             // When the window has finished loading create our google map below
-	  
             google.maps.event.addDomListener(window, 'load', this.init);
         },
         computed: {

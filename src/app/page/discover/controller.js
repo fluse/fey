@@ -41,6 +41,7 @@ module.exports = function (api) {
                     this.layout.layout();
                 }, 2000);
             });
+	ready : true
         },
         computed: {
 

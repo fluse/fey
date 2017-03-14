@@ -2,7 +2,8 @@
 
 /* dependencies */
 var Vue = require('vue');
-
+var menuItem = document.getElementById('menuContact');
+menuItem.style.color = '#1784c7';
 module.exports = function (api) {
 
     /* schemas

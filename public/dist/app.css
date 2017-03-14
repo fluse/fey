@@ -888,7 +888,7 @@ header {
           font-size: 1.8em;
           padding: .7em 1em; } }
 
-.selectedMenuItem {
+.selectedMenuItem a {
   color: #1784c7; }
 
 #footer {

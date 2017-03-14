@@ -1563,7 +1563,7 @@ li, p, strong, span, h2, h3, h4, h5 {
 
 header {
   background-color: #060606;
-  height: 38px;
+  height: 50px;
   display: block;
   width: 100%;
   top: 0;
@@ -2037,7 +2037,7 @@ header {
       width: 40%; } }
   @media only screen and (min-width: 1200px) {
     .contact-wrapper {
-      width: 40%; } }
+      width: 30%; } }
 
 .map-wrapper {
   width: 100%;
@@ -2052,7 +2052,7 @@ header {
       width: 60%; } }
   @media only screen and (min-width: 1200px) {
     .map-wrapper {
-      width: 60; } }
+      width: 70%; } }
 
 .with-header .map-wrapper {
   height: calc(100vh - 50px); }

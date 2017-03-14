@@ -24162,6 +24162,9 @@ module.exports = function (api) {
         ready: function ready() {
             var _this = this;
 
+            var menuItem = document.getElementById('menuDiscover');
+            menuItem.style.color = '#1784c7';
+
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',
@@ -24538,7 +24541,10 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
-        ready: function ready() {},
+        ready: function ready() {
+            var menuItem = document.getElementById('menuWork');
+            menuItem.style.color = '#1784c7';
+        },
 
         computed: {},
         methods: {}

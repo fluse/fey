@@ -23,6 +23,8 @@ module.exports = function (api) {
         mixins: [],
         data: data,
         ready () {
+var menuItem = document.getElementById('menuDiscover');
+		menuItem.style.color = '#1784c7';
 
             // init with selector
             this.layout = new Masonry('.grid', {

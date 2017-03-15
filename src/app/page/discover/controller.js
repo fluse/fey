@@ -21,7 +21,7 @@ module.exports = function (api) {
         mixins: [],
         data: data,
         ready () {
-
+		this.isReady = true,
 	
             // init with selector
             this.layout = new Masonry('.grid', {
@@ -30,7 +30,6 @@ module.exports = function (api) {
                 percentPosition: true,
                 transitionDuration: '0.2s'
             });
-	this.isReady = true,
             Vue.nextTick(() => {
 
                 setTimeout(() => {

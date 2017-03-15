@@ -24160,6 +24160,8 @@ module.exports = function (api) {
         ready: function ready() {
             var _this = this;
 
+            this.isReady = true,
+
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',
@@ -24167,7 +24169,7 @@ module.exports = function (api) {
                 percentPosition: true,
                 transitionDuration: '0.2s'
             });
-            this.isReady = true, Vue.nextTick(function () {
+            Vue.nextTick(function () {
 
                 setTimeout(function () {
                     _this.layout.layout();

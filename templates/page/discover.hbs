@@ -8,9 +8,7 @@
     </li>
 </ul>
 
-<section class="layer media-show">
-
-<template v-show="isReady" >
+<section class="layer media-show" v-show="isReady">
     <span class="close" v-on:click="closeMedia">
         <i class="fa fa-times"></i>
     </span>
@@ -46,5 +44,4 @@
             </ul>
         </div>
     </div>
-</template>
 </section>

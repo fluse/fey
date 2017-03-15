@@ -24160,8 +24160,6 @@ module.exports = function (api) {
         ready: function ready() {
             var _this = this;
 
-            isReady: true,
-
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',

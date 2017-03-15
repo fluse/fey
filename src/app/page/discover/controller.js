@@ -16,13 +16,12 @@ module.exports = function (api) {
     */
     var data = require('./data.js')();
 
-
     return new Vue({
         el: '#body',
         mixins: [],
         data: data,
         ready () {
-	isReady : true,
+
 
             // init with selector
             this.layout = new Masonry('.grid', {

@@ -20,8 +20,7 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
-        ready () {
-		this.isReady = true,
+        ready () {		
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',
@@ -48,6 +47,7 @@ module.exports = function (api) {
 
             openMedia(media) {
                 console.log(media);
+		this.isReady = true,
                 this.current = media;
             },
 

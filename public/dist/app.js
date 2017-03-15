@@ -24160,7 +24160,6 @@ module.exports = function (api) {
         ready: function ready() {
             var _this = this;
 
-            this.isReady = true,
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',
@@ -24184,7 +24183,7 @@ module.exports = function (api) {
         methods: {
             openMedia: function openMedia(media) {
                 console.log(media);
-                this.current = media;
+                this.isReady = true, this.current = media;
             },
             closeMedia: function closeMedia() {
                 this.current = null;

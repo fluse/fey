@@ -24205,7 +24205,6 @@ module.exports = function () {
     return extend({
         isSelectedMenuItemContactDiscover: true,
         current: {},
-        isReady: false,
         settings: {
             hideHeader: false
         },

@@ -22,6 +22,7 @@ module.exports = function (api) {
         mixins: [],
         data: data,
         ready () {
+	isReady : true,
 
             // init with selector
             this.layout = new Masonry('.grid', {
@@ -54,8 +55,8 @@ module.exports = function (api) {
             closeMedia() {
                 this.current = null;
             }
-        },
-	isReady : true
+        }
+	
 
     });
 };

@@ -24167,7 +24167,7 @@ module.exports = function (api) {
                 percentPosition: true,
                 transitionDuration: '0.2s'
             });
-            Vue.nextTick(function () {
+            this.isReady = true, Vue.nextTick(function () {
 
                 setTimeout(function () {
                     _this.layout.layout();
@@ -24205,6 +24205,7 @@ module.exports = function () {
     return extend({
         isSelectedMenuItemContactDiscover: true,
         current: {},
+        isReady: false,
         settings: {
             hideHeader: false
         },

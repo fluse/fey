@@ -22,7 +22,7 @@ module.exports = function (api) {
         data: data,
         ready () {
 
-
+	
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',
@@ -30,6 +30,7 @@ module.exports = function (api) {
                 percentPosition: true,
                 transitionDuration: '0.2s'
             });
+	this.isReady = true,
             Vue.nextTick(() => {
 
                 setTimeout(() => {
@@ -40,6 +41,7 @@ module.exports = function (api) {
                     this.layout.layout();
                 }, 2000);
             });
+
         },
         computed: {
 

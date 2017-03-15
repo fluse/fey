@@ -1245,9 +1245,10 @@ header {
     .media-show .preview {
       width: 70%; } }
   .media-show .preview img {
-    max-height: calc(100vh - 0px);
+    /* max-height: calc(100vh - 0px); */
     max-width: 100%;
     border: 5px solid #000;
+    height: 100%;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
 
 .media-show .description {

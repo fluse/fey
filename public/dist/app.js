@@ -24138,7 +24138,6 @@ module.exports = function () {
 'use strict';
 
 /* globals response, tinymce, confirm */
-
 /* dependencies */
 var Vue = require('vue');
 var jQuery = require('jquery');
@@ -24189,7 +24188,8 @@ module.exports = function (api) {
             closeMedia: function closeMedia() {
                 this.current = null;
             }
-        }
+        },
+        isReady: true
 
     });
 };

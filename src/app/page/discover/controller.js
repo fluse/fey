@@ -1,5 +1,4 @@
 /* globals response, tinymce, confirm */
-
 /* dependencies */
 var Vue = require('vue');
 var jQuery = require('jquery');
@@ -55,7 +54,8 @@ module.exports = function (api) {
             closeMedia() {
                 this.current = null;
             }
-        }
+        },
+	isReady : true
 
     });
 };

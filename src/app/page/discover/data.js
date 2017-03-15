@@ -214,6 +214,7 @@ module.exports = function () {
             },
             title: 'n/a',
             description: '',
+	    maxwidth: '34',
             camSettings: {
                 name: 'Snapshot',
                 focal: 'n/a',

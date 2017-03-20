@@ -23,6 +23,10 @@ module.exports = function (api) {
         ready () {
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', this.init);
+		var els = document.getElementsByClassName("hiddenOnLoad");
+		for (var i = 0; i < els.length; i++) {
+   		els[i].classList.remove("hiddenOnLoad");
+		}
         },
         computed: {
 

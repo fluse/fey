@@ -1202,7 +1202,6 @@ header {
   .grid-sizer img,
   .grid-item img {
     width: 100%;
-    visibility: hidden;
     filter: grayscale(100%); }
   .grid-sizer:hover img,
   .grid-item:hover img {

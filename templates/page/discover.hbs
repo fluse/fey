@@ -8,7 +8,7 @@
     </li>
 </ul>
 
-<section class="layer media-show" v-show="current.url">
+<section id="previewContainer" class="layer media-show hiddenOnLoad" v-show="current.url">
     <span class="close" v-on:click="closeMedia">
         <i class="fa fa-times"></i>
     </span>
@@ -16,7 +16,7 @@
     <div class="preview">
         <img :src="current.url.full" alt="" />
     </div>
-    <div id="previewContainer" class="description hiddenOnLoad">
+    <div  class="description ">
         <h3>\{{current.title}}</h3>
         <p>\{{current.description}} &nbsp;</p>
         <div class="details">

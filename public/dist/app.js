@@ -24027,7 +24027,7 @@ var currentLinkArray = window.location.href.split("/");
 if (currentLinkArray.length > 0) {
     var currentLink = currentLinkArray[currentLinkArray.length - 1];
     var currentMenuLink = document.querySelectorAll("a[href='/" + currentLink + "']")[0].parentElement;
-    currentMenuLink.className += "selectedMenuItem";
+    currentMenuLink.classList.add("selectedMenuItem");
 }
 
 // initialize page controller

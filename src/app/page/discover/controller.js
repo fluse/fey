@@ -47,7 +47,7 @@ module.exports = function (api) {
 
             openMedia(media) {
                 console.log(media);
-		this.isReady = true,
+		document.getElementById("previewContainer").classList.remove("hiddenOnLoad");
                 this.current = media;
             },
 

@@ -12,8 +12,8 @@
     <span class="close" v-on:click="closeMedia">
         <i class="fa fa-times"></i>
     </span>
-
-    <div class="preview">
+ 
+    <div id="previewContainer" class="preview hiddenOnLoad">
         <img :src="current.url.full" alt="" />
     </div>
     <div class="description">

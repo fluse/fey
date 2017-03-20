@@ -1305,6 +1305,8 @@ header {
     .media-show .description .details .icon {
       margin-right: 5px;
       color: #8D1812; }
+  .media-show .description .hiddenOnLoad {
+    margin-top: 2000px; }
 
 .media-show .close {
   position: absolute;

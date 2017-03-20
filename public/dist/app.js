@@ -24183,7 +24183,8 @@ module.exports = function (api) {
         methods: {
             openMedia: function openMedia(media) {
                 console.log(media);
-                this.isReady = true, this.current = media;
+                document.getElementById("previewContainer").classList.remove("hiddenOnLoad");
+                this.current = media;
             },
             closeMedia: function closeMedia() {
                 this.current = null;

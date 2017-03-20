@@ -53,3 +53,7 @@ li, p, strong, span, h2, h3, h4, h5 {
 .with-header #page {
     top: $headerHeight;
 }
+
+.hiddenOnLoad {
+	margin-top: 2000px;
+}

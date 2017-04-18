@@ -1475,4 +1475,5 @@ input.error {
   margin: auto;
   width: 70%; }
   .ytGrid li {
+    width: 33%;
     padding-top: 100px; }

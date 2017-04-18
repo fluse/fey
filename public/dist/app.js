@@ -24537,7 +24537,6 @@ module.exports = function (api) {
 
 /* dependencies */
 var Vue = require('vue');
-var jQuery = require('jquery');
 
 module.exports = function (api) {
 
@@ -24583,7 +24582,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":25,"jquery":8,"vue":17}],25:[function(require,module,exports){
+},{"./data.js":25,"vue":17}],25:[function(require,module,exports){
 'use strict';
 
 /* globals response */

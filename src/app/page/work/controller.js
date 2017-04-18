@@ -2,7 +2,6 @@
 
 /* dependencies */
 var Vue = require('vue');
-var jQuery = require('jquery');
 
 module.exports = function (api) {
 

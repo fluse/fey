@@ -1,9 +1,9 @@
 <ul class="media-list ytGrid">
 	<li v-for="media in mediaList">
 	
-	<div>
+	<div class="ytContainer">
 		<youtube :video-id="media.videoId" player-width="100%" player-height="300"></youtube>
-		<div>
+		<div class="descContainer">
 			<h3> \{{media.title}} </h3>
 			<p> \{{media.description}} </p>
 		</div>
@@ -11,3 +11,4 @@
 	</li>
 </ul>
 
+ 

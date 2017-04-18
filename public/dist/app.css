@@ -1477,5 +1477,8 @@ input.error {
   .ytGrid li {
     width: 33%;
     padding-top: 100px; }
-    .ytGrid li div {
-      width: 95%; }
+    .ytGrid li .ytContainer {
+      width: 95%;
+      height: 500px; }
+  .ytGrid .descContainer {
+    height: 30%; }

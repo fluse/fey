@@ -1470,3 +1470,9 @@ input.error {
 
 :-ms-input-placeholder {
   color: #515151; }
+
+.ytGrid {
+  margin: auto;
+  width: 70%; }
+  .ytGrid li {
+    padding-top: 100px; }

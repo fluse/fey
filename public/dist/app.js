@@ -24842,7 +24842,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Flakes Corner Opening',
-            description: 'Description to be added soon.',
+            description: 'Short clip about the opening day for FlakesCorner in Cologne.',
             videoId: 'TRhE4nde1vU'
         }, {
             type: 'ytvideo',
@@ -24851,7 +24851,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
             },
             title: 'Imagefilm KGK',
-            description: 'Short clip about the opening day for FlakesCorner in Cologne.',
+            description: 'Description to be added soon.',
             videoId: '21E-NmIulFo'
         }, {
             type: 'ytvideo',

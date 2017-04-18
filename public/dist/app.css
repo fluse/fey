@@ -1483,4 +1483,12 @@ input.error {
       position: relative; }
   .ytGrid .descContainer {
     position: absolute;
-    height: 30%; }
+    height: 30%;
+    padding-top: 15px; }
+    .ytGrid .descContainer h3 {
+      font-size: 1.5rem;
+      text-align: center; }
+    .ytGrid .descContainer p {
+      font-size: 0.9rem;
+      padding-top: 10px;
+      text-align: center; }

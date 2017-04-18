@@ -2,7 +2,7 @@
 
 /* dependencies */
 var Vue = require('vue');
-
+var vueYoutubeEmbed = require('vue-youtube-embed');
 module.exports = function (api) {
 
     /* schemas
@@ -14,7 +14,7 @@ module.exports = function (api) {
     /* data
     */
     var data = require('./data.js')();
-
+	
 
     return new Vue({
         el: '#body',

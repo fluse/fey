@@ -13765,6 +13765,251 @@ function request(RequestConstructor, method, url) {
 module.exports = request;
 
 },{}],17:[function(require,module,exports){
+/*!
+  * Vue YouTube Embed version 2.1.0
+  * under MIT License copyright 2017 kaorun343
+  */
+(function (global, factory) {
+	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
+	typeof define === 'function' && define.amd ? define(['exports'], factory) :
+	(factory((global.VueYouTubeEmbed = global.VueYouTubeEmbed || {})));
+}(this, (function (exports) { 'use strict';
+
+// fork from https://github.com/brandly/angular-youtube-embed
+if (!String.prototype.includes) {
+  String.prototype.includes = function () {
+    'use strict';
+    return String.prototype.indexOf.apply(this, arguments) !== -1
+  };
+}
+
+var youtubeRegexp = /https?:\/\/(?:[0-9A-Z-]+\.)?(?:youtu\.be\/|youtube(?:-nocookie)?\.com\S*[^\w\s-])([\w-]{11})(?=[^\w-]|$)(?![?=&+%\w.-]*(?:['"][^<>]*>|<\/a>))[?=&+%\w.-]*/ig;
+var timeRegexp = /t=(\d+)[ms]?(\d+)?s?/;
+
+/**
+ * get id from url
+ * @param  {string} url url
+ * @return {string}     id
+ */
+function getIdFromURL (url) {
+  var id = url.replace(youtubeRegexp, '$1');
+
+  if (id.includes(';')) {
+    var pieces = id.split(';');
+
+    if (pieces[1].includes('%')) {
+      var uriComponent = decodeURIComponent(pieces[1]);
+      id = ("http://youtube.com" + uriComponent).replace(youtubeRegexp, '$1');
+    } else {
+      id = pieces[0];
+    }
+  } else if (id.includes('#')) {
+    id = id.split('#')[0];
+  }
+
+  return id
+}
+
+/**
+ * get time from url
+ * @param  {string} url url
+ * @return {number}     time
+ */
+function getTimeFromURL (url) {
+  if ( url === void 0 ) url = '';
+
+  var times = url.match(timeRegexp);
+
+  if (!times) {
+    return 0
+  }
+
+  var full = times[0];
+  var minutes = times[1];
+  var seconds = times[2];
+
+  if (typeof seconds !== 'undefined') {
+    seconds = parseInt(seconds, 10);
+    minutes = parseInt(minutes, 10);
+  } else if (full.includes('m')) {
+    minutes = parseInt(minutes, 10);
+    seconds = 0;
+  } else {
+    seconds = parseInt(minutes, 10);
+    minutes = 0;
+  }
+
+  return seconds + (minutes * 60)
+}
+
+var container = {
+  scripts: [],
+  events: {},
+
+  run: function run () {
+    var this$1 = this;
+
+    this.scripts.forEach(function (callback) {
+      callback(this$1.YT);
+    });
+    this.scripts = [];
+  },
+
+  register: function register (callback) {
+    var this$1 = this;
+
+    if (this.YT) {
+      this.Vue.nextTick(function () {
+        callback(this$1.YT);
+      });
+    } else {
+      this.scripts.push(callback);
+    }
+  }
+};
+
+var pid = 0;
+
+var YouTubePlayer = {
+  props: {
+    playerHeight: {
+      type: [String, Number],
+      default: '390'
+    },
+    playerWidth: {
+      type: [String, Number],
+      default: '640'
+    },
+    playerVars: {
+      type: Object,
+      default: function () { return ({ autoplay: 0, time: 0 }); }
+    },
+    videoId: {
+      type: String
+    },
+    mute: {
+      type: Boolean,
+      default: false
+    }
+  },
+  render: function render (h) {
+    return h('div', [
+      h('div', { attrs: { id: this.elementId }})
+    ])
+  },
+  template: '<div><div :id="elementId"></div></div>',
+  watch: {
+    playerWidth: 'setSize',
+    playerHeight: 'setSize',
+    videoId: 'update',
+    mute: 'setMute'
+  },
+  data: function data () {
+    pid += 1;
+    return {
+      elementId: ("youtube-player-" + pid),
+      player: {}
+    }
+  },
+  methods: {
+    setSize: function setSize () {
+      this.player.setSize(this.playerWidth, this.playerHeight);
+    },
+    setMute: function setMute (value) {
+      if (value) {
+        this.player.mute();
+      } else {
+        this.player.unMute();
+      }
+    },
+    update: function update (videoId) {
+      var name = (this.playerVars.autoplay ? 'load' : 'cue') + "VideoById";
+      if (this.player.hasOwnProperty(name)) {
+        this.player[name](videoId);
+      } else {
+        setTimeout(function () {
+          this.update(videoId);
+        }.bind(this), 100);
+      }
+    }
+  },
+  mounted: function mounted () {
+    var this$1 = this;
+
+    container.register(function (YouTube) {
+      var ref = this$1;
+      var playerHeight = ref.playerHeight;
+      var playerWidth = ref.playerWidth;
+      var playerVars = ref.playerVars;
+      var videoId = ref.videoId;
+
+      this$1.player = new YouTube.Player(this$1.elementId, {
+        height: playerHeight,
+        width: playerWidth,
+        playerVars: playerVars,
+        videoId: videoId,
+        events: {
+          onReady: function (event) {
+            this$1.setMute(this$1.mute);
+            this$1.$emit('ready', event.target);
+          },
+          onStateChange: function (event) {
+            if (event.data !== -1) {
+              this$1.$emit(container.events[event.data], event.target);
+            }
+          },
+          onError: function (event) {
+            this$1.$emit('error', event.target);
+          }
+        }
+      });
+    });
+  },
+  beforeDestroy: function beforeDestroy () {
+    if (this.player !== null) {
+      this.player.destroy();
+    }
+    delete this.player;
+  }
+};
+
+function install (Vue) {
+  container.Vue = Vue;
+  YouTubePlayer.ready = YouTubePlayer.mounted;
+  Vue.component('youtube', YouTubePlayer);
+  Vue.prototype.$youtube = { getIdFromURL: getIdFromURL, getTimeFromURL: getTimeFromURL };
+
+  var tag = document.createElement('script');
+  tag.src = 'https://www.youtube.com/player_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  window.onYouTubeIframeAPIReady = function () {
+    container.YT = YT;
+    var PlayerState = YT.PlayerState;
+
+    container.events[PlayerState.ENDED] = 'ended';
+    container.events[PlayerState.PLAYING] = 'playing';
+    container.events[PlayerState.PAUSED] = 'paused';
+    container.events[PlayerState.BUFFERING] = 'buffering';
+    container.events[PlayerState.CUED] = 'cued';
+
+    Vue.nextTick(function () {
+      container.run();
+    });
+  };
+}
+
+exports.YouTubePlayer = YouTubePlayer;
+exports.getIdFromURL = getIdFromURL;
+exports.getTimeFromURL = getTimeFromURL;
+exports['default'] = install;
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
+})));
+
+},{}],18:[function(require,module,exports){
 (function (process){
 /*!
  * Vue.js v1.0.28
@@ -24005,7 +24250,7 @@ setTimeout(function () {
 
 module.exports = Vue;
 }).call(this,require('_process'))
-},{"_process":26}],18:[function(require,module,exports){
+},{"_process":27}],19:[function(require,module,exports){
 /* globals request */
 
 'use strict';
@@ -24037,7 +24282,7 @@ if (controller.hasOwnProperty(request.controller)) {
     console.info('no page controller defined');
 }
 
-},{"./page/contact/controller.js":19,"./page/discover/controller.js":21,"./page/welcome/controller.js":23,"./page/work/controller.js":24,"client-api":1}],19:[function(require,module,exports){
+},{"./page/contact/controller.js":20,"./page/discover/controller.js":22,"./page/welcome/controller.js":24,"./page/work/controller.js":25,"client-api":1}],20:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
@@ -24122,7 +24367,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":20,"vue":17}],20:[function(require,module,exports){
+},{"./data.js":21,"vue":18}],21:[function(require,module,exports){
 'use strict';
 
 /* globals response */
@@ -24147,7 +24392,7 @@ module.exports = function () {
     }, response);
 };
 
-},{"extend":5}],21:[function(require,module,exports){
+},{"extend":5}],22:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
@@ -24207,7 +24452,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":22,"jquery":8,"masonry-layout":9,"vue":17}],22:[function(require,module,exports){
+},{"./data.js":23,"jquery":8,"masonry-layout":9,"vue":18}],23:[function(require,module,exports){
 'use strict';
 
 /* globals response */
@@ -24483,7 +24728,7 @@ module.exports = function () {
     }, response);
 };
 
-},{"extend":5}],23:[function(require,module,exports){
+},{"extend":5}],24:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
@@ -24530,14 +24775,14 @@ module.exports = function (api) {
     });
 };
 
-},{"jquery":8,"vue":17}],24:[function(require,module,exports){
+},{"jquery":8,"vue":18}],25:[function(require,module,exports){
 'use strict';
 
 /* globals response, tinymce, confirm */
 
 /* dependencies */
 var Vue = require('vue');
-
+var vueYoutubeEmbed = require('vue-youtube-embed');
 module.exports = function (api) {
 
     /* schemas
@@ -24569,7 +24814,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":25,"vue":17}],25:[function(require,module,exports){
+},{"./data.js":26,"vue":18,"vue-youtube-embed":17}],26:[function(require,module,exports){
 'use strict';
 
 /* globals response */
@@ -24590,7 +24835,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Nature',
-            description: ''
+            videoId: '21E-NmIulFo'
         }, {
             type: 'ytvideo',
             url: {
@@ -24598,12 +24843,12 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
             },
             title: 'n/a',
-            description: ''
+            videoId: '21E-NmIulFo'
         }]
     }, response);
 };
 
-},{"extend":5}],26:[function(require,module,exports){
+},{"extend":5}],27:[function(require,module,exports){
 // shim for using process in browser
 var process = module.exports = {};
 
@@ -24785,4 +25030,4 @@ process.chdir = function (dir) {
 };
 process.umask = function() { return 0; };
 
-},{}]},{},[18]);
+},{}]},{},[19]);

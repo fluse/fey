@@ -58,7 +58,8 @@
     "route-cache": "^0.2.1",
     "sticky-header": "^0.2.1",
     "uglify-js": "^2.6.1",
-    "vue": "^1.0.15"
+    "vue": "^1.0.15",
+    "vue-youtube-embed": "^2.1.0"
   },
   "scripts": {
     "postinstall": "cd scripts/ && sh compile.sh",
@@ -71,6 +72,8 @@
   },
   "main": "server/start.js",
   "devDependencies": {
+    "babelify": "^7.3.0",
+    "grunt-deploy": "^0.1.7",
     "grunt-nodemon": "^0.4.0",
     "grunt-notify": "^0.4.3"
   },

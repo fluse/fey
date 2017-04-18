@@ -2,6 +2,8 @@
 
 /* dependencies */
 var Vue = require('vue');
+var jQuery = require('jquery');
+var Masonry = require('masonry-layout');
 
 module.exports = function (api) {
 

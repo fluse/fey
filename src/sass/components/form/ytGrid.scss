@@ -9,12 +9,13 @@
 		  .ytContainer { 
 			width:95%;
 			height: 500px;
-		  
+			position: relative;
 		  }
 	  }
 	  
 	  .descContainer
 	  {
+		position: absolute;
 		height: 30%;
 		h3{
 			

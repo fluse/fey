@@ -3,7 +3,6 @@
 /* dependencies */
 var Vue = require('vue');
 var jQuery = require('jquery');
-var Masonry = require('masonry-layout');
 
 module.exports = function (api) {
 
@@ -23,7 +22,17 @@ module.exports = function (api) {
         mixins: [],
         data: data,
         ready () {
+			 Vue.nextTick(() => {
 
+                setTimeout(() => {
+                    this.layout.layout();
+                }, 500);
+
+                setTimeout(() => {
+                    this.layout.layout();
+                }, 2000);
+            });
+	
         },
         computed: {
 

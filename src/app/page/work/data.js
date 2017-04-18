@@ -16,7 +16,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Nature',
-            description: '',
+            description: ''
 		},{
             type: 'ytvideo',
             url: {
@@ -24,7 +24,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
             },
             title: 'n/a',
-            description: '',
+            description: ''
         }]
     }, response);
 };

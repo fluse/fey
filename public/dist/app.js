@@ -24538,7 +24538,6 @@ module.exports = function (api) {
 /* dependencies */
 var Vue = require('vue');
 var jQuery = require('jquery');
-var Masonry = require('masonry-layout');
 
 module.exports = function (api) {
 
@@ -24554,7 +24553,20 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
-        ready: function ready() {},
+        ready: function ready() {
+            var _this = this;
+
+            Vue.nextTick(function () {
+
+                setTimeout(function () {
+                    _this.layout.layout();
+                }, 500);
+
+                setTimeout(function () {
+                    _this.layout.layout();
+                }, 2000);
+            });
+        },
 
         computed: {},
         methods: {
@@ -24571,7 +24583,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":25,"jquery":8,"masonry-layout":9,"vue":17}],25:[function(require,module,exports){
+},{"./data.js":25,"jquery":8,"vue":17}],25:[function(require,module,exports){
 'use strict';
 
 /* globals response */

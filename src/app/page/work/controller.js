@@ -21,17 +21,6 @@ module.exports = function (api) {
         mixins: [],
         data: data,
         ready () {
-			 Vue.nextTick(() => {
-
-                setTimeout(() => {
-                    this.layout.layout();
-                }, 500);
-
-                setTimeout(() => {
-                    this.layout.layout();
-                }, 2000);
-            });
-	
         },
         computed: {
 

@@ -24552,20 +24552,7 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
-        ready: function ready() {
-            var _this = this;
-
-            Vue.nextTick(function () {
-
-                setTimeout(function () {
-                    _this.layout.layout();
-                }, 500);
-
-                setTimeout(function () {
-                    _this.layout.layout();
-                }, 2000);
-            });
-        },
+        ready: function ready() {},
 
         computed: {},
         methods: {

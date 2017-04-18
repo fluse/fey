@@ -1,7 +1,7 @@
 <ul class="media-list ytGrid">
 	<li v-for="media in mediaList">
-	<div>
 	<h3> {{media.title}} </h3>
+	<div>
 		<youtube :video-id="media.videoId" player-width="100%" player-height="300"></youtube>
 		<div>
 			

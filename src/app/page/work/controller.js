@@ -2,7 +2,7 @@
 
 /* dependencies */
 var Vue = require('vue');
-var VueYoutubeEmbed = require('vue-youtube-embed');
+import VueYouTubeEmbed from 'vue-youtube-embed';
 module.exports = function (api) {
 
     /* schemas

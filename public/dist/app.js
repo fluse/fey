@@ -24778,11 +24778,17 @@ module.exports = function (api) {
 },{"jquery":8,"vue":18}],25:[function(require,module,exports){
 'use strict';
 
+var _vueYoutubeEmbed = require('vue-youtube-embed');
+
+var _vueYoutubeEmbed2 = _interopRequireDefault(_vueYoutubeEmbed);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 /* globals response, tinymce, confirm */
 
 /* dependencies */
 var Vue = require('vue');
-var VueYoutubeEmbed = require('vue-youtube-embed');
+
 module.exports = function (api) {
 
     /* schemas
@@ -24792,7 +24798,7 @@ module.exports = function (api) {
       /* data
     */
     var data = require('./data.js')();
-    Vue.use(VueYouTubeEmbed);
+    Vue.use(_vueYoutubeEmbed2.default);
 
     return new Vue({
         el: '#body',

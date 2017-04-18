@@ -1,11 +1,11 @@
 <ul class="media-list ytGrid">
 	<li v-for="media in mediaList">
-	<h3> {{media.title}} </h3>
+	
 	<div>
 		<youtube :video-id="media.videoId" player-width="100%" player-height="300"></youtube>
 		<div>
-			
-			<p> {{media.description}} </p>
+			<h3> \{{media.title}} </h3>
+			<p> \{{media.description}} </p>
 		</div>
 	</div>
 	</li>

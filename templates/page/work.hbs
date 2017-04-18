@@ -1,8 +1,6 @@
 <ul class="media-list grid">
-     <template v-for="media in mediaList">
-	<li>
-	<youtube :video-id="media.videoId"></youtube>
+	<li v-for="media in mediaList">
+	<youtube :video-id="media.videoId" player-width="400 player-height="300"></youtube>
 	</li>
-    </template>
 </ul>
 

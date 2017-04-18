@@ -1,7 +1,7 @@
 <ul class="media-list grid">
     <li class="grid-sizer"></li>
     <li v-for="media in mediaList" class="grid-item">
-	<iframe width="420" height="345" src="media.url.full"/>
+	<iframe width="420" height="345" :src="media.url.full"/>
     </li>
 </ul>
 

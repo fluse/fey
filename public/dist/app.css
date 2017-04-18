@@ -1482,6 +1482,7 @@ input.error {
       height: 500px;
       position: relative; }
   .ytGrid .descContainer {
+    width: 100%;
     position: absolute;
     height: 30%;
     padding-top: 15px; }

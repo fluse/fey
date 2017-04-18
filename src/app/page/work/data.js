@@ -16,7 +16,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Nature',
-            videoId: 'M7lc1UVf-VE'
+            videoId: 'TRhE4nde1vU'
 		},{
             type: 'ytvideo',
             url: {
@@ -33,7 +33,7 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Nature',
-            videoId: 'M7lc1UVf-VE'
+            videoId: '3ZrU4D8w-18'
 		},
 		{
             type: 'ytvideo',
@@ -42,7 +42,24 @@ module.exports = function () {
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Nature',
-            videoId: '21E-NmIulFo'
+            videoId: 'TRhE4nde1vU'
+		},{
+            type: 'ytvideo',
+            url: {
+                thumb: '/public/image/IMG_6898_thumb.jpg',
+                full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
+            },
+            title: 'n/a',
+           videoId: '21E-NmIulFo'
+        },
+		{
+            type: 'ytvideo',
+            url: {
+                thumb: '/public/image/explore1_thumb.jpg',
+                full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
+            },
+            title: 'Nature',
+            videoId: '3ZrU4D8w-18'
 		}
 		]
     }, response);

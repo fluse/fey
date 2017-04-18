@@ -1482,14 +1482,15 @@ input.error {
       height: 500px;
       position: relative; }
   .ytGrid .descContainer {
+    text-align: center;
     width: 100%;
     position: absolute;
     height: 30%;
     padding-top: 15px; }
     .ytGrid .descContainer h3 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-align: center; }
     .ytGrid .descContainer p {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       padding-top: 10px;
       text-align: center; }

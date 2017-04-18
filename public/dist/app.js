@@ -24841,7 +24841,8 @@ module.exports = function () {
                 thumb: '/public/image/explore1_thumb.jpg',
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
-            title: 'Nature',
+            title: 'Flakes Corner Opening',
+            description: 'Description to be added soon.',
             videoId: 'TRhE4nde1vU'
         }, {
             type: 'ytvideo',
@@ -24849,7 +24850,8 @@ module.exports = function () {
                 thumb: '/public/image/IMG_6898_thumb.jpg',
                 full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
             },
-            title: 'n/a',
+            title: 'Imagefilm KGK',
+            description: 'Short clip about the opening day for FlakesCorner in Cologne.',
             videoId: '21E-NmIulFo'
         }, {
             type: 'ytvideo',
@@ -24857,31 +24859,8 @@ module.exports = function () {
                 thumb: '/public/image/explore1_thumb.jpg',
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
-            title: 'Nature',
-            videoId: '3ZrU4D8w-18'
-        }, {
-            type: 'ytvideo',
-            url: {
-                thumb: '/public/image/explore1_thumb.jpg',
-                full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
-            },
-            title: 'Nature',
-            videoId: 'TRhE4nde1vU'
-        }, {
-            type: 'ytvideo',
-            url: {
-                thumb: '/public/image/IMG_6898_thumb.jpg',
-                full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
-            },
-            title: 'n/a',
-            videoId: '21E-NmIulFo'
-        }, {
-            type: 'ytvideo',
-            url: {
-                thumb: '/public/image/explore1_thumb.jpg',
-                full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
-            },
-            title: 'Nature',
+            title: 'Masterclass Lichtstraße Short Teaser',
+            description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse. Tried my new Came-TV Gimbal for the first time.',
             videoId: '3ZrU4D8w-18'
         }]
     }, response);

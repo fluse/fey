@@ -26,8 +26,17 @@ module.exports = function (api) {
         computed: {
 
         },
-        methods: {
+         methods: {
 
+            openMedia(media) {
+                console.log(media);
+		document.getElementById("previewContainer").classList.remove("hiddenOnLoad");
+                this.current = media;
+            },
+
+            closeMedia() {
+                this.current = null;
+            }
         }
 
     });

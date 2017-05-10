@@ -11,7 +11,7 @@
 			height: 500px;
 			position: relative;
 		  }
-		   @include MQ(M) {
+		   @include MQ(X) {
 			overflow: hidden;
 			overflow-y: auto;
 			width: 100%;

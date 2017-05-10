@@ -1481,6 +1481,12 @@ input.error {
       width: 95%;
       height: 500px;
       position: relative; }
+    @media only screen and (min-width: 640px) {
+      .ytGrid li {
+        overflow: hidden;
+        overflow-y: auto;
+        width: 100%;
+        padding-top: 40px; } }
   .ytGrid .descContainer {
     text-align: center;
     width: 100%;

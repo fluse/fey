@@ -1,6 +1,5 @@
 /* globals response, tinymce, confirm */
  
-
 /* dependencies */
 var Vue = require('vue');
 import VueYouTubeEmbed from 'vue-youtube-embed';

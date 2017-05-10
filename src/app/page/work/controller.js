@@ -1,4 +1,5 @@
 /* globals response, tinymce, confirm */
+ 
 
 /* dependencies */
 var Vue = require('vue');

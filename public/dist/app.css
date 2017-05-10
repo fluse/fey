@@ -1475,18 +1475,19 @@ input.error {
   margin: auto;
   width: 50%; }
   .ytGrid li {
-    width: 33%;
-    padding-top: 100px; }
+    width: 100%;
+    padding-top: 40px; }
     .ytGrid li .ytContainer {
       width: 95%;
       height: 500px;
       position: relative; }
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
+        width: 95%;
         overflow: hidden;
         overflow-y: auto;
-        width: 100%;
-        padding-top: 40px; } }
+        width: 33%;
+        padding-top: 100px; } }
   .ytGrid .descContainer {
     text-align: center;
     width: 100%;

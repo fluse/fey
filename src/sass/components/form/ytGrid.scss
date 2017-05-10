@@ -3,8 +3,8 @@
 	  width:50%;
 
 	  li {
-		  width:33%;
-		  padding-top:100px;
+		  width:100%;
+		  padding-top: 40px;
 	
 		  .ytContainer {
 			width:95%;
@@ -12,10 +12,11 @@
 			position: relative;
 		  }
 		   @include MQ(X) {
+			width:95%;
 			overflow: hidden;
 			overflow-y: auto;
-			width: 100%;
-			padding-top: 40px;
+			width: 33%;
+			padding-top: 100px;
 						  }
 	  }
 

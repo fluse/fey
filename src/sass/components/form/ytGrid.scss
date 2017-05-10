@@ -1,18 +1,18 @@
 .ytGrid {
       margin: auto;
 	  width:50%;
-	  
+
 	  li {
 		  width:33%;
 		  padding-top:100px;
-		  
-		  .ytContainer { 
+
+		  .ytContainer {
 			width:95%;
 			height: 500px;
 			position: relative;
 		  }
 	  }
-	  
+
 	  .descContainer
 	  {
 		text-align: center;
@@ -27,6 +27,9 @@
 			text-align: center;
 			height: 30%;
 			border-bottom: 1px solid #1784c7;
+      width: 100%;
+      padding-left: 2px;
+      padding-right: 2px;
 		}
 		p {
 			font-size: 0.7rem;

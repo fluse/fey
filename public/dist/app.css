@@ -1538,6 +1538,9 @@ input.error {
       width: 100%;
       padding-left: 2px;
       padding-right: 2px; }
+      @media only screen and (min-width: 1000px) {
+        .ytGrid .descContainer h3 {
+          height: 26%; } }
       @media only screen and (min-width: 1200px) {
         .ytGrid .descContainer h3 {
           height: 20%; } }

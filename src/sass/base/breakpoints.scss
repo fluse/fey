@@ -4,7 +4,7 @@ $S:     540px;
 $M:     640px;
 $L:     1000px;
 $X:     1200px;
-
+$XX:     1500px;
 
 // media queries
 
@@ -20,5 +20,8 @@ $X:     1200px;
   }
   @else if $canvas == X {
    @media only screen and (min-width: $X) { @content; }
+  }
+  @else if $canvas == XX {
+   @media only screen and (min-width: $XX) { @content; }
   }
 }

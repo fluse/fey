@@ -1497,13 +1497,32 @@ input.error {
           width: 95%; } }
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
-        overflow: hidden;
-        overflow-y: auto;
         width: 33%;
         padding-top: 100px; } }
+  .ytGrid .ytContainer:hover .videoThumb {
+    opacity: 0.3; }
+  .ytGrid .ytContainer:hover .playbuttonOnHover {
+    opacity: 1; }
   .ytGrid .videoThumb {
+    opacity: 1;
+    display: block;
     width: 100%;
-    height: 250px; }
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden; }
+  .ytGrid .playbuttonOnHover {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+    .ytGrid .playbuttonOnHover div {
+      background-color: #1784c7;
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px; }
   .ytGrid .descContainer {
     text-align: center;
     width: 100%;

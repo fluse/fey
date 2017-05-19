@@ -7,6 +7,7 @@
 		  padding-top: 40px;
 
 		  .ytContainer {
+
 		  @include MQ(X) {
 				width:95%;
 			}
@@ -14,17 +15,45 @@
 			position: relative;
 		  }
 		   @include MQ(X) {
-			overflow: hidden;
-			overflow-y: auto;
 			width: 33%;
 			padding-top: 100px;
 						  }
 	  }
+
+    .ytContainer:hover .videoThumb {
+      opacity: 0.3;
+    }
+
+    .ytContainer:hover .playbuttonOnHover {
+      opacity: 1;
+    }
     .videoThumb
     {
+      opacity: 1;
+      display: block;
       width: 100%;
       height: 250px;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
 
+    .playbuttonOnHover
+    {
+      transition: .5s ease;
+       opacity: 0;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+
+
+      div {
+        background-color: #1784c7;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
     }
 	  .descContainer
 	  {

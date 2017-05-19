@@ -2,6 +2,9 @@
 	<li v-for="media in mediaList" v-on:click="openMedia(media)">
 	<div class="ytContainer">
 		<img :src="media.url.thumb" alt="" class="videoThumb" />
+		<div class="playbuttonOnHover">
+    	<div>Play</div>
+  	</div>
 		<div class="descContainer">
 			<h3> \{{media.title}} </h3>
 			  <br />
@@ -18,7 +21,7 @@
 		</span>
 
 		<div class="preview">
-				<youtube :video-id="current.videoId" player-width="100%" player-height="300"></youtube>
+				<youtube :video-id="current.videoId" player-width="100%" player-height="100%"></youtube>
 		</div>
 		<div  class="description ">
 				<h3>\{{current.title}}</h3>

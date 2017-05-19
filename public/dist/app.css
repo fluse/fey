@@ -1531,13 +1531,16 @@ input.error {
     /*	border: 1px solid #424446; */
     margin-top: 5px; }
     .ytGrid .descContainer h3 {
-      font-size: 1.0rem;
+      font-size: 1.5em;
       text-align: center;
-      height: 20%;
+      height: 36%;
       border-bottom: 1px solid #1784c7;
       width: 100%;
       padding-left: 2px;
       padding-right: 2px; }
+      @media only screen and (min-width: 1200px) {
+        .ytGrid .descContainer h3 {
+          height: 20%; } }
     .ytGrid .descContainer p {
       font-size: 0.7rem;
       padding-top: 10px;

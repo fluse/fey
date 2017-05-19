@@ -50,7 +50,7 @@
        cursor: pointer;
 
       div {
-        background-color: #1784c7;
+        background-color: $color-info;
         color: white;
         font-size: 16px;
         padding: 16px 32px;
@@ -66,10 +66,13 @@
 	/*	border: 1px solid #424446; */
 		margin-top: 5px;
 		h3{
-			font-size: 1.0rem;
+			font-size: 1.5em;
 			text-align: center;
-			height: 20%;
-			border-bottom: 1px solid #1784c7;
+			height: 36%;
+      @include MQ(X) {
+        height: 20%;
+       }
+			border-bottom: 1px solid $color-info;
       width: 100%;
       padding-left: 2px;
       padding-right: 2px;

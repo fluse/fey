@@ -899,6 +899,7 @@ header {
   bottom: 1px;
   width: 100%;
   height: 20px;
+  text-align: center;
   /* background-color: $color-footer; */
   /* .logo { */
   /* width: 100%; */
@@ -972,13 +973,9 @@ header {
 
 .footerElement {
   color: #fff;
-  position: relative;
   padding: 1.0em .3em;
   font-size: 1.3em;
-  text-decoration: none;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
+  text-decoration: none; }
 
 .full {
   bottom: 0;

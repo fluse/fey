@@ -971,12 +971,14 @@ header {
   /* } */ }
 
 .footerElement {
-  left: 48%;
   color: #fff;
   position: relative;
   padding: 1.0em .3em;
   font-size: 1.3em;
-  text-decoration: none; }
+  text-decoration: none;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
 
 .full {
   bottom: 0;
@@ -1177,6 +1179,16 @@ header {
 .with-header .layer {
   position: fixed !important;
   top: 38px; }
+
+.videolayer {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  height: 50%;
+  width: 50%;
+  background-color: #201f1f; }
 
 .grid-sizer,
 .grid-item {
@@ -1489,6 +1501,8 @@ input.error {
         overflow-y: auto;
         width: 33%;
         padding-top: 100px; } }
+  .ytGrid .videoThumb {
+    width: 100%; }
   .ytGrid .descContainer {
     text-align: center;
     width: 100%;

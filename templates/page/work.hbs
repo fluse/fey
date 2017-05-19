@@ -1,7 +1,7 @@
 <ul class="media-list ytGrid">
-	<li v-for="media in mediaList" v-on:click="openMedia(media)">
+	<li v-for="media in mediaList" >
 	<div class="ytContainer">
-		<img :src="media.url.thumb" alt="" class="videoThumb" />
+		<img :src="media.url.thumb" alt="" class="videoThumb" v-on:click="openMedia(media)" />
 		<div class="playbuttonOnHover">
     	<div>Play</div>
   	</div>

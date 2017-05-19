@@ -89,10 +89,11 @@
 }
 
 .footerElement{
-	left:48%;
 	color:#fff;
 	position:relative;
 	padding: 1.0em .3em;
     font-size: 1.3em;
     text-decoration: none;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

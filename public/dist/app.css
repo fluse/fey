@@ -1518,7 +1518,8 @@ input.error {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); }
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer; }
     .ytGrid .playbuttonOnHover div {
       background-color: #1784c7;
       color: white;

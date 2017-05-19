@@ -1,8 +1,8 @@
 <ul class="media-list ytGrid">
 	<li v-for="media in mediaList">
-	
+
 	<div class="ytContainer">
-		<youtube :video-id="media.videoId" player-width="100%" player-height="300"></youtube>
+		<img :src="media.thumb" alt="" v-on:click="openMedia(media)" />
 		<div class="descContainer">
 			<h3> \{{media.title}} </h3>
 			  <br />
@@ -12,4 +12,17 @@
 	</li>
 </ul>
 
- 
+
+<section id="previewContainer" class="layer media-show hiddenOnLoad" v-show="current.url">
+		<span class="close" v-on:click="closeMedia">
+				<i class="fa fa-times"></i>
+		</span>
+
+		<div class="preview">
+				<youtube :video-id="current.videoId" player-width="100%" player-height="300"></youtube>
+		</div>
+		<div  class="description ">
+				<h3>\{{current.title}}</h3>
+				<p>\{{current.description}} &nbsp;</p>
+		</div>
+</section>

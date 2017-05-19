@@ -1495,7 +1495,7 @@ input.error {
     position: absolute;
     height: 30%;
     padding-top: 15px;
-    border: 1px solid #424446;
+    /*	border: 1px solid #424446; */
     margin-top: 5px; }
     .ytGrid .descContainer h3 {
       font-size: 1.0rem;

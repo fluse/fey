@@ -5,7 +5,7 @@
 	  li {
 		  width:100%;
 		  padding-top: 40px;
-	
+
 		  .ytContainer {
 		  @include MQ(X) {
 				width:95%;
@@ -28,7 +28,7 @@
 		position: absolute;
 		height: 30%;
 		padding-top: 15px;
-		border: 1px solid #424446;
+	/*	border: 1px solid #424446; */
 		margin-top: 5px;
 		h3{
 			font-size: 1.0rem;

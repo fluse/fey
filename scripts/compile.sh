@@ -3,4 +3,4 @@ sh browserify.sh
 # minify js file
 sh uglify.sh
 # compile & minify css & set assets banner
-grunt deploy
+grunt deploy --force

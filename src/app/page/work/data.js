@@ -6,6 +6,7 @@ module.exports = function () {
 
     return extend({
 	isSelectedMenuItemContactWork : true,
+      current: {},
         settings: {
             hideHeader: false
         },

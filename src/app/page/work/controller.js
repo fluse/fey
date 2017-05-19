@@ -1,8 +1,9 @@
 /* globals response, tinymce, confirm */
- 
+
 
 /* dependencies */
 var Vue = require('vue');
+var jQuery = require('jquery');
 import VueYouTubeEmbed from 'vue-youtube-embed';
 module.exports = function (api) {
 
@@ -16,7 +17,7 @@ module.exports = function (api) {
     */
     var data = require('./data.js')();
 	Vue.use(VueYouTubeEmbed);
-	
+
     return new Vue({
         el: '#body',
         mixins: [],

@@ -24788,6 +24788,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 /* dependencies */
 var Vue = require('vue');
+var jQuery = require('jquery');
 
 module.exports = function (api) {
 
@@ -24821,7 +24822,7 @@ module.exports = function (api) {
     });
 };
 
-},{"./data.js":26,"vue":18,"vue-youtube-embed":17}],26:[function(require,module,exports){
+},{"./data.js":26,"jquery":8,"vue":18,"vue-youtube-embed":17}],26:[function(require,module,exports){
 'use strict';
 
 /* globals response */
@@ -24832,6 +24833,7 @@ module.exports = function () {
 
     return extend({
         isSelectedMenuItemContactWork: true,
+        current: {},
         settings: {
             hideHeader: false
         },

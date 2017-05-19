@@ -1541,7 +1541,7 @@ input.error {
       @media only screen and (min-width: 1000px) {
         .ytGrid .descContainer h3 {
           height: 26%; } }
-      @media only screen and (min-width: 1500px) {
+      @media only screen and (min-width: 1800px) {
         .ytGrid .descContainer h3 {
           height: 20%; } }
     .ytGrid .descContainer p {

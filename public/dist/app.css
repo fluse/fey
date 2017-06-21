@@ -1482,7 +1482,11 @@ input.error {
 
 .ytGrid {
   margin: auto;
-  width: 50%; }
+  width: 50%;
+  max-width: 400px; }
+  @media only screen and (min-width: 1200px) {
+    .ytGrid {
+      max-width: auto; } }
   .ytGrid li {
     width: 100%;
     max-width: 400px;

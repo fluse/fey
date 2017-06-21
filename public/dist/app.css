@@ -1485,6 +1485,7 @@ input.error {
   width: 50%; }
   .ytGrid li {
     width: 100%;
+    max-width: 400px;
     padding-top: 40px; }
     .ytGrid li .ytContainer {
       height: 500px;

@@ -1258,6 +1258,7 @@ header {
   .media-show .preview img {
     /* max-height: calc(100vh - 0px); */
     border: 5px solid #000;
+    max-width: 100%;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
 
 .media-show .description {
@@ -1332,9 +1333,6 @@ header {
 
 .portrait {
   height: 100%; }
-
-.landscape {
-  max-width: 100%; }
 
 #map {
   position: absolute;

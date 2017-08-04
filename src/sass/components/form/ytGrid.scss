@@ -1,13 +1,10 @@
 .ytGrid {
       margin: auto;
 	  width:50%;
-	  max-width: 400px;
 		@include MQ(X) {
 		max-width: none;
 		}
 	  li {
-		  width:100%;
-		  max-width:400px;
 		  padding-top: 40px;
 
 		  .ytContainer {
@@ -19,7 +16,6 @@
 			position: relative;
 		  }
 		   @include MQ(X) {
-			width: 33%;
 			padding-top: 100px;
 						  }
 	  }

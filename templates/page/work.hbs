@@ -1,3 +1,4 @@
+<div id="videoLayerBackground" v-show="current.url"></div>
 <ul class="media-list ytGrid">
 	<li v-for="media in mediaList" >
 	<div class="ytContainer">
@@ -14,7 +15,7 @@
 	</li>
 </ul>
 
-<div id="videoLayerBackground" v-show="current.url"></div>
+
 <section id="previewContainer" class="videolayer media-show hiddenOnLoad" v-show="current.url">
 		<span class="close" v-on:click="closeMedia">
 				<i class="fa fa-times"></i>

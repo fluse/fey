@@ -24857,8 +24857,15 @@ module.exports = function () {
         mediaList: [{
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/scFlakesCorner.png',
-                full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
+                thumb: '/public/image/scMasterclass.jpg'
+            },
+            title: 'Masterclass Lichtstraße Short Teaser',
+            description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse. Tried my new Came-TV Gimbal for the first time.',
+            videoId: '3ZrU4D8w-18'
+        }, {
+            type: 'ytvideo',
+            url: {
+                thumb: '/public/image/scFlakesCornerjpeg.jpg'
             },
             title: 'Flakes Corner Opening',
             description: 'Short clip about the opening day for FlakesCorner in Cologne.',
@@ -24866,8 +24873,7 @@ module.exports = function () {
         }, {
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/scFlakesCorner.jpg',
-                full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
+                thumb: '/public/image/scKGK.jpg'
             },
             title: 'Imagefilm KGK',
             description: 'Description to be added soon.',
@@ -24875,12 +24881,27 @@ module.exports = function () {
         }, {
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/explore1_thumb.jpg',
-                full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
+                thumb: '/public/image/scEuropaService.jpg'
             },
-            title: 'Masterclass Lichtstraße Short Teaser',
-            description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse. Tried my new Came-TV Gimbal for the first time.',
-            videoId: '3ZrU4D8w-18'
+            title: 'Europaservice Car Rental Annual Report of 2016',
+            description: '',
+            videoId: 'czhuRMrR4tU'
+        }, {
+            type: 'ytvideo',
+            url: {
+                thumb: '/public/image/scFriedrichshafen.jpg'
+            },
+            title: 'Imagefilm ZF Friedrichshafen AG',
+            description: '',
+            videoId: 'Zkh1wXHTmOY'
+        }, {
+            type: 'ytvideo',
+            url: {
+                thumb: '/public/image/scGipfelTreffen.jpg'
+            },
+            title: 'Aftermovie Social Gipfel',
+            description: '',
+            videoId: 'c7dJu-RttY4'
         }]
     }, response);
 };

@@ -24475,6 +24475,7 @@ module.exports = function () {
                 full: '/public/image/explore1.jpg'
             },
             title: 'Nature',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24490,6 +24491,7 @@ module.exports = function () {
                 full: '/public/image/explore2.jpg'
             },
             title: 'Circle of Life',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24505,6 +24507,7 @@ module.exports = function () {
                 full: '/public/image/explore3.jpg'
             },
             title: 'Frozen Water',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24520,6 +24523,7 @@ module.exports = function () {
                 full: '/public/image/explore4.jpg'
             },
             title: 'Auenland',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24535,6 +24539,7 @@ module.exports = function () {
                 full: '/public/image/explore5.jpg'
             },
             title: 'Beach',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Snapshot',
@@ -24550,6 +24555,7 @@ module.exports = function () {
                 full: '/public/image/explore6.jpg'
             },
             title: 'Farbenspiel',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24565,6 +24571,7 @@ module.exports = function () {
                 full: '/public/image/explore7.jpg'
             },
             title: 'Mirror',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24580,6 +24587,7 @@ module.exports = function () {
                 full: '/public/image/explore8.jpg'
             },
             title: 'Sundancer',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24596,6 +24604,7 @@ module.exports = function () {
             },
             title: 'Triangle',
             description: '',
+            class: 'landscape',
             camSettings: {
                 name: 'Canon 6D',
                 focal: '28mm',
@@ -24610,6 +24619,7 @@ module.exports = function () {
                 full: '/public/image/explore10.jpg'
             },
             title: 'Power',
+            class: 'portrait',
             description: '',
             camSettings: {
                 name: 'Canon 6D',
@@ -24626,6 +24636,7 @@ module.exports = function () {
             },
             title: 'n/a',
             description: '',
+            class: 'landscape',
             camSettings: {
                 name: 'Snapshot',
                 focal: 'n/a',
@@ -24641,6 +24652,7 @@ module.exports = function () {
             },
             title: 'n/a',
             description: '',
+            class: 'portrait',
             camSettings: {
                 name: 'Snapshot',
                 focal: 'n/a',
@@ -24655,6 +24667,7 @@ module.exports = function () {
                 full: '/public/image/Cover_Shot_HP.jpg'
             },
             title: 'n/a',
+            class: 'portrait',
             description: '',
             camSettings: {
                 name: 'Snapshot',
@@ -24670,6 +24683,7 @@ module.exports = function () {
                 full: '/public/image/Designer_1_HP.jpg'
             },
             title: 'n/a',
+            class: 'portrait',
             description: '',
             maxwidth: '34',
             camSettings: {
@@ -24686,6 +24700,7 @@ module.exports = function () {
                 full: '/public/image/DSC_0098.jpg'
             },
             title: 'n/a',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Snapshot',
@@ -24701,6 +24716,7 @@ module.exports = function () {
                 full: '/public/image/IMG_6896.jpg'
             },
             title: 'n/a',
+            class: 'landscape',
             description: '',
             camSettings: {
                 name: 'Snapshot',
@@ -24716,6 +24732,7 @@ module.exports = function () {
                 full: '/public/image/IMG_6898.jpg'
             },
             title: 'n/a',
+            class: 'portrait',
             description: '',
             camSettings: {
                 name: 'Snapshot',

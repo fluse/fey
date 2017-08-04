@@ -1,7 +1,7 @@
 <ul class="media-list grid">
     <li class="grid-sizer"></li>
     <li v-for="media in mediaList" class="grid-item" v-on:click="openMedia(media)">
-	<img :src="media.url.thumb" alt="" />
+	<img :src="media.url.thumb" :class="media.class" alt="" />
     </li>
 </ul>
 
@@ -9,7 +9,7 @@
     <span class="close" v-on:click="closeMedia">
         <i class="fa fa-times"></i>
     </span>
- 
+
     <div class="preview">
         <img :src="current.url.full" alt="" />
     </div>

@@ -1179,14 +1179,24 @@ header {
   top: 38px; }
 
 .videolayer {
-  position: absolute !important;
+  position: fixed;
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
   min-height: 50%;
   width: 50%;
-  background-color: #201f1f; }
+  background-color: #201f1f;
+  z-index: 3; }
+
+#videoLayerBackground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: .7;
+  z-index: 2;
+  display: none; }
 
 .grid-sizer,
 .grid-item {

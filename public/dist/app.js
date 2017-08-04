@@ -24866,7 +24866,7 @@ module.exports = function () {
         }, {
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/IMG_6898_thumb.jpg',
+                thumb: '/public/image/scFlakesCorner.jpg',
                 full: 'https://www.youtube.com/watch?v=3ZrU4D8w-18'
             },
             title: 'Imagefilm KGK',

@@ -1489,7 +1489,8 @@ input.error {
     .ytGrid {
       max-width: none; } }
   .ytGrid li {
-    padding-top: 40px; }
+    padding-top: 40px;
+    width: 100%; }
     .ytGrid li .ytContainer {
       height: 500px;
       position: relative; }
@@ -1507,7 +1508,7 @@ input.error {
     opacity: 1;
     display: block;
     width: 100%;
-    height: 250px;
+    height: calc(width/1.77);
     transition: .5s ease;
     backface-visibility: hidden;
     cursor: pointer; }

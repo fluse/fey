@@ -863,7 +863,7 @@ li, p, strong, span, h2, h3, h4, h5 {
   animation-name: fadeOut; }
 
 header {
-  background-color: #060606;
+  background: linear-gradient(to bottom, #060606, #201F1F 100%);
   height: 38px;
   display: block;
   width: 100%;

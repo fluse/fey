@@ -892,7 +892,7 @@ header {
           padding: .7em 1em; } }
 
 .selectedMenuItem a {
-  color: #1784c7 !important; }
+  color: #A14742 !important; }
 
 #footer {
   position: fixed;
@@ -1403,7 +1403,7 @@ header {
     color: #fff;
     padding: .4em 1em;
     border-radius: 3px;
-    background-color: #1784c7;
+    background-color: #A14742;
     cursor: pointer; }
   .contact input, .contact textarea {
     color: #fff;
@@ -1522,7 +1522,7 @@ input.error {
     -ms-transform: translate(-50%, -50%);
     cursor: pointer; }
     .ytGrid .playbuttonOnHover div {
-      background-color: #1784c7;
+      background-color: #A14742;
       color: white;
       font-size: 16px;
       padding: 16px 32px; }
@@ -1538,7 +1538,7 @@ input.error {
       font-size: 1.5em;
       text-align: center;
       height: 36%;
-      border-bottom: 1px solid #1784c7;
+      border-bottom: 1px solid #A14742;
       width: 100%;
       padding-left: 2px;
       padding-right: 2px; }

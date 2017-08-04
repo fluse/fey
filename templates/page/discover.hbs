@@ -11,7 +11,7 @@
     </span>
 
     <div class="preview">
-        <img :src="current.url.full" v-bind:class="current.isPortrait ? portrait" alt="" />
+        <img :src="current.url.full" v-bind:class="{ portrait: current.isPortrait }" alt="" />
     </div>
     <div  class="description ">
         <h3>\{{current.title}}</h3>

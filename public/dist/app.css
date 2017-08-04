@@ -1510,9 +1510,9 @@ input.error {
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
         margin-top: 300px; } }
-  .ytGrid .ytContainer:hover .videoThumb {
+  .ytGrid .ytLayerOverThumbnail:hover .videoThumb {
     opacity: 0.3; }
-  .ytGrid .ytContainer:hover .playbuttonOnHover {
+  .ytGrid .ytLayerOverThumbnail:hover .playbuttonOnHover {
     opacity: 1; }
   .ytGrid .videoThumb {
     opacity: 1;

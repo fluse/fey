@@ -2,10 +2,12 @@
 <ul class="media-list ytGrid">
 	<li v-for="media in mediaList" >
 	<div class="ytContainer">
-		<img :src="media.url.thumb" alt="" class="videoThumb" v-on:click="openMedia(media)" />
-		<div class="playbuttonOnHover" v-on:click="openMedia(media)">
-    	<div>Play</div>
-  	</div>
+		<div class="ytLayerOverThumbnail">
+			<img :src="media.url.thumb" alt="" class="videoThumb" v-on:click="openMedia(media)" />
+			<div class="playbuttonOnHover" v-on:click="openMedia(media)">
+	    	<div>Play</div>
+	  	</div>
+	 </div>
 		<div class="descContainer">
 			<h3> \{{media.title}} </h3>
 			  <br />

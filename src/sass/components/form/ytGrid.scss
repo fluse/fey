@@ -5,7 +5,7 @@
 		max-width: none;
 		}
 	  li {
-		  padding-top: 40px;
+		  margin-top: 40px;
       width: 100%;
 		  .ytContainer {
 
@@ -16,7 +16,7 @@
 			position: relative;
 		  }
 		   @include MQ(X) {
-			padding-top: 100px;
+			margin-top: 300px;
 						  }
 	  }
 
@@ -43,7 +43,7 @@
       transition: .5s ease;
        opacity: 0;
        position: absolute;
-       top: 25%;
+       top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
        -ms-transform: translate(-50%, -50%);

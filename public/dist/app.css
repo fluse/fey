@@ -1489,7 +1489,7 @@ input.error {
     .ytGrid {
       max-width: none; } }
   .ytGrid li {
-    padding-top: 40px;
+    margin-top: 40px;
     width: 100%; }
     .ytGrid li .ytContainer {
       height: 500px;
@@ -1499,7 +1499,7 @@ input.error {
           width: 95%; } }
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
-        padding-top: 100px; } }
+        margin-top: 300px; } }
   .ytGrid .ytContainer:hover .videoThumb {
     opacity: 0.3; }
   .ytGrid .ytContainer:hover .playbuttonOnHover {
@@ -1516,7 +1516,7 @@ input.error {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
-    top: 25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);

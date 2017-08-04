@@ -1,7 +1,7 @@
 <ul class="media-list grid">
     <li class="grid-sizer"></li>
     <li v-for="media in mediaList" class="grid-item" v-on:click="openMedia(media)">
-	<img :src="media.url.thumb" :class="isPortrait ? portrait" alt="" />
+	<img :src="media.url.thumb" alt="" />
     </li>
 </ul>
 
@@ -11,7 +11,7 @@
     </span>
 
     <div class="preview">
-        <img :src="current.url.full" alt="" />
+        <img :src="current.url.full" v-bind:class="isPortrait ? portrait" alt="" />
     </div>
     <div  class="description ">
         <h3>\{{current.title}}</h3>

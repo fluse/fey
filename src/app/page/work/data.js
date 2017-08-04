@@ -13,7 +13,7 @@ module.exports = function () {
 		mediaList: [{
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/explore1_thumb.jpg',
+                thumb: '/public/image/scFlakesCorner.png',
                 full: 'https://www.youtube.com/watch?v=21E-NmIulFo'
             },
             title: 'Flakes Corner Opening',

@@ -19,6 +19,11 @@
 			margin-top: 300px;
 						  }
 	  }
+    .ytLayerOverThumbnail{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
 
     .ytLayerOverThumbnail:hover .videoThumb {
       opacity: 0.3;

@@ -1510,6 +1510,13 @@ input.error {
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
         margin-top: 300px; } }
+  .ytGrid .ytLayerOverThumbnail {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
   .ytGrid .ytLayerOverThumbnail:hover .videoThumb {
     opacity: 0.3; }
   .ytGrid .ytLayerOverThumbnail:hover .playbuttonOnHover {

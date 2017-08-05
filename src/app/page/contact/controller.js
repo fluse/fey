@@ -13,6 +13,7 @@ module.exports = function (api) {
     /* data
     */
     var data = require('./data.js')();
+    const nodemailer = require('nodemailer');
 
 
     return new Vue({
@@ -44,6 +45,14 @@ module.exports = function (api) {
                     this.removeError();
                     if (!err) {
                         this.success = true;
+                        mailOptions.from = this.mail.from; // sender address
+                        mailOptions.to = 'fickdichtiffi@gmail.com'; // list of receivers
+                        mailOptions.subject = this.mail.subject; // Subject line
+                        mailOptions.text = this.mail.text; // plain text body
+                        mailOptions.html = this.mail.name;
+
+                        transporter.sendMail(mailOptions, (error, info) => {
+                        });
                     }
                 });
             },

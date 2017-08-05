@@ -5,7 +5,7 @@
   "private": true,
   "version": "1.0.1",
   "engines": {
-    "node": "4.2.0"
+    "node": ">=50.9"
   },
   "description": "camperdays prototype",
   "repository": {
@@ -51,6 +51,7 @@
     "mongoose": "^4.1.0",
     "mongoose-deep-populate": "^2.0.3",
     "node-jsx": "^0.13.3",
+    "nodemailer": "^4.0.1",
     "notie": "^2.1.0",
     "parralax": "https://github.com/wagerfield/parallax.git",
     "request": "^2.67.0",

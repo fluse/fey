@@ -13,16 +13,7 @@ module.exports = function (api) {
     /* data
     */
     var data = require('./data.js')();
-    const nodemailer = require('nodemailer');
-    let transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        secure: true, // secure:true for port 465, secure:false for port 587
-        auth: {
-            user: 'fickdichtiffi',
-            pass: 'aligator9'
-        }
-    });
+
 
     return new Vue({
         el: '#body',
@@ -42,7 +33,6 @@ module.exports = function (api) {
         },
         methods: {
 
-
             sendMail() {
 
                 if (this.mail.from.length === 0 || this.mail.text.length === 0 || this.mail.name.length === 0 || this.mail.subject.length === 0) {
@@ -54,16 +44,6 @@ module.exports = function (api) {
                     this.removeError();
                     if (!err) {
                         this.success = true;
-                        let mailOptions = {
-                            from: this.mail.from, // sender address
-                            to: 'fickdichtiffi@gmail.com', // list of receivers
-                            subject: this.mail.subject, // Subject line
-                            text: this.mail.text, // plain text body
-                            html: this.mail.name // html body
-                        };
-
-                        transporter.sendMail(mailOptions, (error, info) => {
-                        });
                     }
                 });
             },

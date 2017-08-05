@@ -36331,6 +36331,22 @@ module.exports = function (api) {
     */
     var data = require('./data.js')();
     var nodemailer = require('nodemailer');
+    var transporter = nodemailer.createTransport({
+        host: 'smtp.gmail.com',
+        port: 465,
+        secure: true, // secure:true for port 465, secure:false for port 587
+        auth: {
+            user: 'fickdichtiffi',
+            pass: 'aligator9'
+        }
+    });
+    var mailOptions = {
+        from: '', // sender address
+        to: 'fickdichtiffi@gmail.com', // list of receivers
+        subject: 'asd', // Subject line
+        text: 'asd', // plain text body
+        html: '' // html body
+    };
 
     return new Vue({
         el: '#body',

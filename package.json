@@ -51,7 +51,6 @@
     "mongoose": "^4.1.0",
     "mongoose-deep-populate": "^2.0.3",
     "node-jsx": "^0.13.3",
-    "nodemailer": "^4.0.1",
     "notie": "^2.1.0",
     "parralax": "https://github.com/wagerfield/parallax.git",
     "request": "^2.67.0",

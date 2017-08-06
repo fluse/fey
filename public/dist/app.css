@@ -1396,7 +1396,7 @@ header {
   .contact p {
     width: 100%;
     display: block;
-    line-height: 2.0rem;
+    line-height: 1.4rem;
     font-size: 1rem;
     text-align: center;
     padding-bottom: 1.5em; }
@@ -1435,13 +1435,16 @@ header {
     color: #efefef; }
   .contact img {
     border: 3px solid #000;
-    width: 100%; }
+    width: 90%; }
 
 .contactImage {
-  margin: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 22%;
   width: 50%; }
 
 .contactDescription {
+  padding-right: 52px;
   width: 100%; }
 
 [class*='notice-'] {

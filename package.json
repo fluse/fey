@@ -5,7 +5,8 @@
   "private": true,
   "version": "1.0.1",
   "engines": {
-    "node": "7.9.0"
+    "node": "7.9.0",
+	"npm":"7.9.0"
   },
   "description": "camperdays prototype",
   "repository": {
@@ -58,7 +59,7 @@
     "require-all": "^2.0.0",
     "route-cache": "^0.2.1",
     "sticky-header": "^0.2.1",
-    "uglify-js": "^2.6.1",
+    "uglify-js": "^2.8.22",
     "vue": "^1.0.15",
     "vue-youtube-embed": "^2.1.0"
   },

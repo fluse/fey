@@ -1442,7 +1442,8 @@ header {
   width: 50%; }
 
 .contactDescription {
-  width: 100%; }
+  width: 100%;
+  margin-top: 25px; }
 
 [class*='notice-'] {
   padding: 1em;

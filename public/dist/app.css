@@ -1437,6 +1437,16 @@ header {
     border: 3px solid #000;
     width: 90%; }
 
+.contactImage {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 22%;
+  width: 50%; }
+
+.contactDescription {
+  padding-right: 52px;
+  width: 100%; }
+
 [class*='notice-'] {
   padding: 1em;
   font-size: 1rem;

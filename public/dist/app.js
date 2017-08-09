@@ -36480,6 +36480,7 @@ module.exports = function (api) {
                 columnWidth: '.grid-sizer',
                 percentPosition: true,
                 transitionDuration: '0.2s'
+
             });
             Vue.nextTick(function () {
 

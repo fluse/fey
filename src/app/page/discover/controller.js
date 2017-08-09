@@ -20,13 +20,14 @@ module.exports = function (api) {
         el: '#body',
         mixins: [],
         data: data,
-        ready () {		
+        ready () {
             // init with selector
             this.layout = new Masonry('.grid', {
                 itemSelector: '.grid-item',
                 columnWidth: '.grid-sizer',
                 percentPosition: true,
                 transitionDuration: '0.2s'
+
             });
             Vue.nextTick(() => {
 
@@ -55,7 +56,7 @@ module.exports = function (api) {
                 this.current = null;
             }
         }
-	
+
 
     });
 };

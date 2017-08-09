@@ -1198,8 +1198,9 @@ header {
   z-index: 2; }
 
 .grid {
-  width: 85%;
-  margin: auto; }
+  width: 84%;
+  margin: auto;
+  margin-top: 7%; }
 
 .grid-sizer,
 .grid-item {
@@ -1272,7 +1273,7 @@ header {
       width: 70%; } }
   .media-show .preview img {
     /* max-height: calc(100vh - 0px); */
-    border: 5px solid #000;
+    border: 2px solid;
     max-width: 100%;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
 

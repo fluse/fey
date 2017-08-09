@@ -1197,7 +1197,7 @@ header {
   opacity: .7;
   z-index: 2; }
 
-.grid-item {
+.grid {
   width: 85%; }
 
 .grid-sizer,

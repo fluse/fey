@@ -1198,7 +1198,8 @@ header {
   z-index: 2; }
 
 .grid {
-  width: 85%; }
+  width: 85%;
+  margin: auto; }
 
 .grid-sizer,
 .grid-item {

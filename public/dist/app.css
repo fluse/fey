@@ -1249,7 +1249,6 @@ header {
   height: 360px; }
 
 .media-show .preview {
-  position: absolute;
   top: 0;
   left: 0;
   display: -ms-flex;
@@ -1261,19 +1260,24 @@ header {
       align-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 100%;
+  width: auto;
+  margin: auto;
+  /*    @include MQ(M) {
+            width: 60%;
+            padding-left: 1em;
+        }
+
+        @include MQ(L) {
+            width: 70%;
+        }
+
+        */
   height: 100%;
   pointer-events: none; }
-  @media only screen and (min-width: 640px) {
-    .media-show .preview {
-      width: 60%;
-      padding-left: 1em; } }
-  @media only screen and (min-width: 1000px) {
-    .media-show .preview {
-      width: 70%; } }
   .media-show .preview img {
     /* max-height: calc(100vh - 0px); */
     border: 2px solid;
+    height: 100%;
     max-width: 100%;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
 

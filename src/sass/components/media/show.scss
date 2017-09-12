@@ -1,7 +1,6 @@
 .media-show {
 
     .preview {
-        position: absolute;;
         top: 0;
         left: 0;
         display: -ms-flex;
@@ -10,9 +9,10 @@
         justify-content: center;
         align-content: center;
         align-items: center;
-        width: 100%;
+        width: auto;
+        margin:auto;
 
-        @include MQ(M) {
+    /*    @include MQ(M) {
             width: 60%;
             padding-left: 1em;
         }
@@ -20,12 +20,15 @@
         @include MQ(L) {
             width: 70%;
         }
+
+        */
         height: 100%;
         pointer-events: none;
 
         img {
             /* max-height: calc(100vh - 0px); */
             border: 2px solid;
+            height: 100%;
             max-width:100%;
             transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
         }

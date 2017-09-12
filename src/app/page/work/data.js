@@ -19,16 +19,7 @@ module.exports = function () {
     			description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse. Tried my new Came-TV Gimbal for the first time.',
                 videoId: '3ZrU4D8w-18'
     		},
-
-      {
-            type: 'ytvideo',
-            url: {
-                thumb: '/public/image/scFlakesCornerjpeg.jpg',
-            },
-            title: 'Flakes Corner Opening',
-			description: 'Short clip about the opening day for FlakesCorner in Cologne.',
-            videoId: 'TRhE4nde1vU'
-		},{
+        {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scKGK.jpg',
@@ -55,6 +46,15 @@ module.exports = function () {
 			description: '',
             videoId: 'Zkh1wXHTmOY'
 		},
+    {
+          type: 'ytvideo',
+          url: {
+              thumb: '/public/image/scFlakesCornerjpeg.jpg',
+          },
+          title: 'Flakes Corner Opening',
+    description: 'Short clip about the opening day for FlakesCorner in Cologne.',
+          videoId: 'TRhE4nde1vU'
+  },
     {
             type: 'ytvideo',
             url: {

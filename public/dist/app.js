@@ -36922,14 +36922,6 @@ module.exports = function () {
         }, {
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/scFlakesCornerjpeg.jpg'
-            },
-            title: 'Flakes Corner Opening',
-            description: 'Short clip about the opening day for FlakesCorner in Cologne.',
-            videoId: 'TRhE4nde1vU'
-        }, {
-            type: 'ytvideo',
-            url: {
                 thumb: '/public/image/scKGK.jpg'
             },
             title: 'Imagefilm KGK',
@@ -36951,6 +36943,14 @@ module.exports = function () {
             title: 'Imagefilm ZF Friedrichshafen AG',
             description: '',
             videoId: 'Zkh1wXHTmOY'
+        }, {
+            type: 'ytvideo',
+            url: {
+                thumb: '/public/image/scFlakesCornerjpeg.jpg'
+            },
+            title: 'Flakes Corner Opening',
+            description: 'Short clip about the opening day for FlakesCorner in Cologne.',
+            videoId: 'TRhE4nde1vU'
         }, {
             type: 'ytvideo',
             url: {

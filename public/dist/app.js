@@ -36753,7 +36753,7 @@ module.exports = function () {
             type: 'image',
             url: {
                 thumb: '/public/image/Cannes Tropez_Pics_074_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_074.JPG'
+                full: '/public/image/Cannes Tropez_Pics_074.jpg'
             },
             title: '',
             isPortrait: false,

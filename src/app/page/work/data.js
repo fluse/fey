@@ -22,7 +22,7 @@ module.exports = function () {
         {
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/scContra.jpg',
+                thumb: 'http://i.ytimg.com/vi/vFygdG2KvCY/maxresdefault.jpg',
             },
             title: 'Contra 2017 Aftermovie',
 			description: 'Description to be added soon.',

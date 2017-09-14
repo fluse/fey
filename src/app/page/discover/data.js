@@ -62,8 +62,8 @@ module.exports = function () {
         },{
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_075_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_075.jpg'
+                thumb: '/public/image/Cannes Tropez_Pics_211_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_211.jpg'
             },
             title: '',
             isPortrait: false,
@@ -110,8 +110,8 @@ module.exports = function () {
         },{
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_211_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_211.jpg'
+                thumb: '/public/image/Cannes Tropez_Pics_075_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_075.jpg'
             },
             title: '',
             isPortrait: false,
@@ -126,8 +126,8 @@ module.exports = function () {
         },{
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_222_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_222.jpg'
+                thumb: '/public/image/explore2_thumb.jpg',
+                full: '/public/image/explore2.jpg'
             },
             title: '',
             isPortrait: false,
@@ -222,8 +222,8 @@ module.exports = function () {
         },{
             type: 'image',
             url: {
-                thumb: '/public/image/explore2_thumb.jpg',
-                full: '/public/image/explore2.jpg'
+                thumb: '/public/image/Cannes Tropez_Pics_222_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_222_thumbnail.jpg'
             },
             title: 'Circle of Life',
             isPortrait: false,

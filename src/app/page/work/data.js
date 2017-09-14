@@ -22,12 +22,21 @@ module.exports = function () {
         {
             type: 'ytvideo',
             url: {
-                thumb: '/public/image/scKGK.jpg',
+                thumb: '/public/image/scContra.jpg',
             },
-            title: 'Imagefilm KGK',
+            title: 'Contra 2017 Aftermovie',
 			description: 'Description to be added soon.',
-           videoId: '21E-NmIulFo'
+           videoId: 'vFygdG2KvCY'
         },
+         {
+              type: 'ytvideo',
+              url: {
+                  thumb: '/public/image/scKGK.jpg',
+              },
+              title: 'Imagefilm KGK',
+  			description: 'Description to be added soon.',
+             videoId: '21E-NmIulFo'
+          },
 		{
             type: 'ytvideo',
             url: {

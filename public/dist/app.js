@@ -37114,6 +37114,14 @@ module.exports = function () {
         }, {
             type: 'ytvideo',
             url: {
+                thumb: '/public/image/scContra.jpg'
+            },
+            title: 'Contra 2017 Aftermovie',
+            description: 'Description to be added soon.',
+            videoId: 'vFygdG2KvCY'
+        }, {
+            type: 'ytvideo',
+            url: {
                 thumb: '/public/image/scKGK.jpg'
             },
             title: 'Imagefilm KGK',

@@ -36560,7 +36560,7 @@ module.exports = function () {
         }, {
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_079_thumbnail.JPG',
+                thumb: '/public/image/Cannes Tropez_Pics_079_thumbnail.jpg',
                 full: '/public/image/Cannes Tropez_Pics_079.JPG'
             },
             title: 'Circle of Life',

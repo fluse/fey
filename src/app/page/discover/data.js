@@ -46,6 +46,22 @@ module.exports = function () {
         },{
             type: 'image',
             url: {
+                thumb: '/public/image/Cannes Tropez_Pics_079.JPG',
+                full: '/public/image/Cannes Tropez_Pics_079_thumbnail.JPG'
+            },
+            title: 'Circle of Life',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: 'Canon 6D',
+                focal: '14mm',
+                aperture: 'f/18',
+                exposure_time: '1/125',
+                iso: 'Iso 100'
+            }
+        },{
+            type: 'image',
+            url: {
                 thumb: '/public/image/explore3_thumb.jpg',
                 full: '/public/image/explore3.jpg'
             },

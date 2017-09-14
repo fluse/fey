@@ -36544,8 +36544,8 @@ module.exports = function () {
         }, {
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_074_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_074.jpg'
+                thumb: '/public/image/Cannes Tropez_Pics_079_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_079.jpg'
             },
             title: '',
             isPortrait: false,
@@ -36752,8 +36752,8 @@ module.exports = function () {
         }, {
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_079_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_079.JPG'
+                thumb: '/public/image/Cannes Tropez_Pics_074_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_074.JPG'
             },
             title: '',
             isPortrait: false,

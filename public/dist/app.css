@@ -1527,7 +1527,8 @@ input.error {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    position: relative; }
   .ytGrid .ytLayerOverThumbnail:hover .videoThumb {
     opacity: 0.3; }
   .ytGrid .ytLayerOverThumbnail:hover .playbuttonOnHover {
@@ -1539,7 +1540,8 @@ input.error {
     height: calc(width/1.77);
     transition: .5s ease;
     backface-visibility: hidden;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
   .ytGrid .playbuttonOnHover {
     transition: .5s ease;
     opacity: 0;

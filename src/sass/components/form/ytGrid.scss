@@ -23,6 +23,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
   }
 
 
@@ -42,6 +43,7 @@
       transition: .5s ease;
       backface-visibility: hidden;
       cursor: pointer;
+      position: relative;
     }
 
     .playbuttonOnHover

@@ -30,6 +30,198 @@ module.exports = function () {
         },{
             type: 'image',
             url: {
+                thumb: '/public/image/Cannes Tropez_Pics_074_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_074.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Brüssel 2_2_thumbnail.jpg',
+                full: '/public/image/Brüssel 2_2.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_075_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_075.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_196_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_196.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Gipfeltreffen_Social_D2031_thumbnail.jpg',
+                full: '/public/image/Gipfeltreffen_Social_D2031.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_211_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_211.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_222_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_222.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_213_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_213.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_237_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_237.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_262_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_262.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_263_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_263.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
+                thumb: '/public/image/Cannes Tropez_Pics_059_thumbnail.jpg',
+                full: '/public/image/Cannes Tropez_Pics_059.jpg'
+            },
+            title: '',
+            isPortrait: false,
+            description: '',
+            camSettings: {
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
+            }
+        },{
+            type: 'image',
+            url: {
                 thumb: '/public/image/explore2_thumb.jpg',
                 full: '/public/image/explore2.jpg'
             },
@@ -49,15 +241,15 @@ module.exports = function () {
                 thumb: '/public/image/Cannes Tropez_Pics_079_thumbnail.jpg',
                 full: '/public/image/Cannes Tropez_Pics_079.JPG'
             },
-            title: 'Circle of Life',
+            title: '',
             isPortrait: false,
             description: '',
             camSettings: {
-                name: 'Canon 6D',
-                focal: '14mm',
-                aperture: 'f/18',
-                exposure_time: '1/125',
-                iso: 'Iso 100'
+                name: '',
+                focal: '',
+                aperture: '',
+                exposure_time: '',
+                iso: ''
             }
         },{
             type: 'image',

@@ -36720,22 +36720,6 @@ module.exports = function () {
         }, {
             type: 'image',
             url: {
-                thumb: '/public/image/Cannes Tropez_Pics_059_thumbnail.jpg',
-                full: '/public/image/Cannes Tropez_Pics_059.jpg'
-            },
-            title: '',
-            isPortrait: false,
-            description: '',
-            camSettings: {
-                name: '',
-                focal: '',
-                aperture: '',
-                exposure_time: '',
-                iso: ''
-            }
-        }, {
-            type: 'image',
-            url: {
                 thumb: '/public/image/Cannes Tropez_Pics_222_thumbnail.jpg',
                 full: '/public/image/Cannes Tropez_Pics_222_thumbnail.jpg'
             },

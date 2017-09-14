@@ -37108,47 +37108,47 @@ module.exports = function () {
             url: {
                 thumb: '/public/image/scMasterclass.jpg'
             },
-            title: 'Masterclass Lichtstraße Short Teaser',
-            description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse. Tried my new Came-TV Gimbal for the first time.',
+            title: 'Masterclass Lichtstraße',
+            description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse.',
             videoId: '3ZrU4D8w-18'
         }, {
             type: 'ytvideo',
             url: {
                 thumb: 'http://i.ytimg.com/vi/vFygdG2KvCY/maxresdefault.jpg'
             },
-            title: 'Contra 2017 Aftermovie',
-            description: 'Description to be added soon.',
+            title: 'Contra 2017',
+            description: 'Aftermovie of the marketing conference Contra 2017 in Duesseldorf.',
             videoId: 'vFygdG2KvCY'
         }, {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scKGK.jpg'
             },
-            title: 'Imagefilm KGK',
-            description: 'Description to be added soon.',
+            title: 'KGK lawfirm',
+            description: 'Image video for the law firm KGK Rechtsanwälte based in Cologne.',
             videoId: '21E-NmIulFo'
         }, {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scEuropaService.jpg'
             },
-            title: 'Europaservice Car Rental Annual Report of 2016',
-            description: '',
+            title: 'Europaservice AG',
+            description: 'We transformed the yearly Annual Report of the year 2016 into a movie which was displayed to the shareholders.',
             videoId: 'czhuRMrR4tU'
         }, {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scFriedrichshafen.jpg'
             },
-            title: 'Imagefilm ZF Friedrichshafen AG',
-            description: '',
+            title: 'ZF Friedrichshaven AG',
+            description: 'Image film for the car parts producer ZF Friedrichshafen AG to show the production circle of a new product.',
             videoId: 'Zkh1wXHTmOY'
         }, {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scFlakesCornerjpeg.jpg'
             },
-            title: 'Flakes Corner Opening',
+            title: 'Flakes Corner',
             description: 'Short clip about the opening day for FlakesCorner in Cologne.',
             videoId: 'TRhE4nde1vU'
         }, {
@@ -37156,8 +37156,8 @@ module.exports = function () {
             url: {
                 thumb: '/public/image/scGipfelTreffen.jpg'
             },
-            title: 'Aftermovie Social Gipfel',
-            description: '',
+            title: 'Gipfeltreffen',
+            description: 'Short after movie of the marketing event Gipfeltreffen 2016 in cologne.',
             videoId: 'c7dJu-RttY4'
         }]
     }, response);

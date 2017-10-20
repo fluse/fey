@@ -1511,14 +1511,13 @@ input.error {
       max-width: none; } }
   .ytGrid li {
     margin-top: 40px;
-    width: 100%;
-    height: 270px; }
+    width: 100%; }
     .ytGrid li .ytContainer {
+      height: 500px;
       position: relative; }
       @media only screen and (min-width: 1200px) {
         .ytGrid li .ytContainer {
-          width: 95%;
-          height: 500px; } }
+          width: 95%; } }
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
         margin-top: 300px; } }

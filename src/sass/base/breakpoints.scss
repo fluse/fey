@@ -9,6 +9,9 @@ $XX:     1800px;
 // media queries
 
 @mixin MQ($canvas) {
+  @if $canvas == MLANDSCAPE {
+   @media only screen and (orientation:landscape) { @content; }
+  }
   @if $canvas == S {
    @media only screen and (min-width: $S) { @content; }
   }

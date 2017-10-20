@@ -1565,6 +1565,12 @@ input.error {
     padding-top: 15px;
     /*	border: 1px solid #424446; */
     margin-top: 5px; }
+    @media only screen and (orientation: landscape) {
+      .ytGrid .descContainer {
+        height: 36%; } }
+    @media only screen and (min-width: 1200px) {
+      .ytGrid .descContainer {
+        height: 36%; } }
     .ytGrid .descContainer h3 {
       font-size: 1.5em;
       text-align: center;

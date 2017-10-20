@@ -1519,6 +1519,9 @@ input.error {
         .ytGrid li .ytContainer {
           width: 95%;
           height: 500px; } }
+      @media only screen and (min-width: 1000px) {
+        .ytGrid li .ytContainer {
+          margin-top: 105px; } }
     @media only screen and (min-width: 1200px) {
       .ytGrid li {
         margin-top: 300px; } }

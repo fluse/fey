@@ -10,10 +10,10 @@ $XX:     1800px;
 
 @mixin MQ($canvas) {
   @if $canvas == MLANDSCAPE {
-   @media only screen and (max-width: $S) and (orientation:landscape) { @content; }
+   @media only screen and (orientation:landscape) { @content; }
   }
   @if $canvas == MPORTRAIT {
-   @media only screen and (max-width: $S) and (orientation:portrait) { @content; }
+   @media only screen and (orientation:portrait) { @content; }
   }
   @if $canvas == S {
    @media only screen and (min-width: $S) { @content; }

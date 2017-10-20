@@ -20,18 +20,18 @@
       @include MQ(M) {
       margin-top: 65px;
             }
-      }
+
 
       @include MQ(L) {
     margin-top: 105px;
             }
-		  }
+
 		   @include MQ(X) {
 			margin-top: 300px;
 						  }
 
 
-	  }
+	  }}
     .ytLayerOverThumbnail{
       display: flex;
       justify-content: center;

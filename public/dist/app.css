@@ -1280,6 +1280,9 @@ header {
     height: 100%;
     max-width: 100%;
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); }
+    @media only screen and (orientation: portrait) {
+      .media-show .preview img {
+        height: auto; } }
 
 .media-show .description {
   position: absolute;
@@ -1519,12 +1522,15 @@ input.error {
         .ytGrid li .ytContainer {
           width: 95%;
           height: 500px; } }
+      @media only screen and (min-width: 640px) {
+        .ytGrid li .ytContainer {
+          margin-top: 65px; } }
       @media only screen and (min-width: 1000px) {
         .ytGrid li .ytContainer {
           margin-top: 105px; } }
-    @media only screen and (min-width: 1200px) {
-      .ytGrid li {
-        margin-top: 300px; } }
+      @media only screen and (min-width: 1200px) {
+        .ytGrid li .ytContainer {
+          margin-top: 300px; } }
   .ytGrid .ytLayerOverThumbnail {
     display: -ms-flexbox;
     display: flex;

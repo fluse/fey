@@ -17,10 +17,19 @@ module.exports = function () {
                 url: {
                     thumb: '/public/image/scMasterclass.jpg',
                 },
-                title: 'Masterclass Lichtstraße Test',
+                title: 'Masterclass Lichtstraße',
     			description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse.',
                 videoId: '3ZrU4D8w-18'
     		},
+        {
+                  type: 'ytvideo',
+                  url: {
+                      thumb: '/public/image/scMasterclass.jpg',
+                  },
+                  title: 'Masterclass Lichtstraße',
+      			description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse.',
+                  videoId: '3ZrU4D8w-18'
+      		},
         {
             type: 'ytvideo',
             url: {

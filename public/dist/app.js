@@ -37110,7 +37110,7 @@ module.exports = function () {
             },
             title: 'Testmovie',
             description: 'Af',
-            videoId: '//player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
+            videoId: 'https:////player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
         }, {
             type: 'ytvideo',
             url: {

@@ -37108,7 +37108,7 @@ module.exports = function () {
             url: {
                 thumb: '/public/image/scMasterclass.jpg'
             },
-            title: 'Masterclass Lichtstraße TEST',
+            title: 'Masterclass Lichtstraße TEST1',
             description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse.',
             videoId: '3ZrU4D8w-18'
         }, {

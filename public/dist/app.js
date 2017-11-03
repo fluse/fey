@@ -37104,6 +37104,14 @@ module.exports = function () {
             hideHeader: false
         },
         mediaList: [{
+            type: 'vimeo',
+            url: {
+                thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg'
+            },
+            title: 'Testmovie',
+            description: 'Af',
+            videoId: 'https://player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
+        }, {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scMasterclass.jpg'
@@ -37167,6 +37175,14 @@ module.exports = function () {
             title: 'Gipfeltreffen',
             description: 'Short after movie of the marketing event Gipfeltreffen 2016 in cologne.',
             videoId: 'c7dJu-RttY4'
+        }, {
+            type: 'vimeo',
+            url: {
+                thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg'
+            },
+            title: 'Testmovie',
+            description: 'Af',
+            videoId: 'https://player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
         }]
     }, response);
 };

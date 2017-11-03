@@ -37106,10 +37106,10 @@ module.exports = function () {
         mediaList: [{
             type: 'vimeo',
             url: {
-                thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg'
+                thumb: 'http://i.ytimg.com/vi/vFygdG2KvCY/maxresdefault.jpg'
             },
-            title: 'Testmovie',
-            description: 'Af',
+            title: 'Contra 2017',
+            description: 'Aftermovie of the marketing conference Contra 2017 in Duesseldorf.',
             videoId: '//player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
         }, {
             type: 'ytvideo',

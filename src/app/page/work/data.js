@@ -13,7 +13,7 @@ module.exports = function () {
 		mediaList: [
 
       {
-          type: 'ytvideo',
+          type: 'vimeo',
           url: {
               thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg',
           },

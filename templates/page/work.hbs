@@ -22,7 +22,8 @@
 		<span class="close" v-on:click="closeMedia">
 				<i class="fa fa-times"></i>
 		</span>
-		<youtube :video-id="current.videoId" player-width="100%" player-height="500px"></youtube>
+		<youtube v-if="current.type === 'ytvideo'" :video-id="current.videoId" player-width="100%" player-height="500px"></youtube>
+		<iframe v-if="current.type === 'vimeo'" :src="current.videoId" frameborder="0" allowfullscreen></iframe>
 		<!--<div  class="description ">
 				<h3>\{{current.title}}</h3>
 				<p>\{{current.description}} &nbsp;</p>

@@ -37104,11 +37104,19 @@ module.exports = function () {
             hideHeader: false
         },
         mediaList: [{
+            type: 'vimeo',
+            url: {
+                thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg'
+            },
+            title: 'Testmovie',
+            description: 'Af',
+            videoId: 'https://player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
+        }, {
             type: 'ytvideo',
             url: {
                 thumb: '/public/image/scMasterclass.jpg'
             },
-            title: 'Masterclass Lichtstraße TEST1',
+            title: 'Masterclass Lichtstraße',
             description: 'Short Teaser I made for die-Contra in Cologne at Studiolichtstrasse.',
             videoId: '3ZrU4D8w-18'
         }, {

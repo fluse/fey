@@ -15,11 +15,11 @@ module.exports = function () {
       {
           type: 'vimeo',
           url: {
-              thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg',
+              thumb: 'https://i.vimeocdn.com/video/664467446_1280x720.jpg',
           },
-          title: 'Testmovie',
-    description: 'Af',
-         videoId: 'https://player.vimeo.com/video/' + '6370469' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
+          title: 'Malte & Diana - Wedding Video',
+    description: 'Wedding video with the lovely couple Malte & Diana',
+         videoId: 'https://player.vimeo.com/video/' + '241002462' + '?portrait=0&byline=0&badge=0&title=0&autoplay=1'
       },
       {
                 type: 'ytvideo',

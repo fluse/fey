@@ -15,7 +15,7 @@ module.exports = function () {
       {
           type: 'vimeo',
           url: {
-              thumb: 'https://i.vimeocdn.com/video/23766985_1280x720.jpg',
+              thumb: 'http://i.ytimg.com/vi/vFygdG2KvCY/maxresdefault.jpg',
           },
           title: 'Contra 2017',
     description: 'Aftermovie of the marketing conference Contra 2017 in Duesseldorf.',

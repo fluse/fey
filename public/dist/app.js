@@ -92528,14 +92528,14 @@ module.exports = function (api) {
                 });
 
                 var dataMail = {
-                    from: this.mail.name + ' <' + this.mail.email + '>',
+                    from: this.mail.from + ' <' + this.mail.name + '>',
                     to: 'chris.kremer5@web.de',
-                    subject: 'Message Received',
-                    text: this.mail.body
+                    subject: 'Message Received' + this.mail.subject,
+                    text: this.mail.text
                 };
 
                 mailgun.messages().send(dataMail, function (error, body) {
-                    console.log(body);
+                    console.log("sent");
                 });
 
                 /* return api('post', '/mail/', {}, this.mail, (err, result) => {

@@ -13,7 +13,7 @@ module.exports = function (api) {
     /* data
     */
     var data = require('./data.js')();
-    const nodemailer = require('nodemailer');
+    /* const nodemailer = require('nodemailer');
     let transporter = nodemailer.createTransport({
         host: 'smtp.gmail.com',
         port: 465,
@@ -29,7 +29,7 @@ module.exports = function (api) {
         subject: 'asd', // Subject line
         text: 'asd', // plain text body
         html: ''// html body
-    };
+    }; */
 
     return new Vue({
         el: '#body',
@@ -55,8 +55,24 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
+				
+				var mailgun = require('mailgun-js')({
+					apiKey: 'key-16447671c371614bbcb77d85cfa483e2',
+					domain: 'smtp.mailgun.org'
+				});
 
-                return api('post', '/mail/', {}, this.mail, (err, result) => {
+				var dataMail = {
+					from:       this.mail.name + ' <'+ this.mail.email +'>',
+					to:         'chris.kremer5@web.de',
+					subject:    'Message Received',
+					text:       this.mail.body
+				};
+
+				mailgun.messages().send(dataMail, function (error, body) {
+					console.log(body);
+				});
+
+                /* return api('post', '/mail/', {}, this.mail, (err, result) => {
                     this.removeError();
                     if (!err) {
                         this.success = true;
@@ -69,7 +85,7 @@ module.exports = function (api) {
                         transporter.sendMail(mailOptions, (error, info) => {
                         });
                     }
-                });
+                }); */
             },
 
             removeError () {

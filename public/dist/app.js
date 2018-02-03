@@ -37075,6 +37075,7 @@ if (controller.hasOwnProperty(request.controller)) {
 
 /* dependencies */
 var Vue = require('vue');
+var mailgun = require("mailgun.js");
 module.exports = function (api) {
 
     /* schemas
@@ -37124,7 +37125,7 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
-                var mailgun = require("mailgun.js");
+
                 var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
                 var DOMAIN = 'smtp.mailgun.org';
                 var mailgun = require('mailgun.js')({ apiKey: api_key, domain: DOMAIN });

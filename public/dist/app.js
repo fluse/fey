@@ -100487,8 +100487,6 @@ if (controller.hasOwnProperty(request.controller)) {
 
 /* dependencies */
 var Vue = require('vue');
-var nodemailer = require('nodemailer');
-var mg = require('nodemailer-mailgun-transport');
 
 module.exports = function (api) {
 
@@ -100539,6 +100537,9 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
+
+                var nodemailer = require('nodemailer');
+                var mg = require('nodemailer-mailgun-transport');
 
                 // This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
                 var auth = {

@@ -37126,9 +37126,8 @@ module.exports = function (api) {
                     return;
                 }
 
-                var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
-                var DOMAIN = 'smtp.mailgun.org';
-                var mailgun = require('mailgun.js')({ apiKey: api_key, domain: DOMAIN });
+                mailgun.api_key = 'key-16447671c371614bbcb77d85cfa483e2';
+                mailgun.DOMAIN = 'smtp.mailgun.org';
 
                 var dataMail = {
                     from: this.mail.from + ' <' + this.mail.name + '>',

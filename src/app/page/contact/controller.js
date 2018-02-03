@@ -2,7 +2,6 @@
 
 /* dependencies */
 var Vue = require('vue');
-var nodemailer = require('nodemailer');
 module.exports = function (api) {
 
     /* schemas
@@ -56,32 +55,20 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
-				
-				
-				var mg = require('nodemailer-mailgun-transport');
-				 
-				// This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
-				var auth = {
-				  auth: {
-					api_key: 'key-16447671c371614bbcb77d85cfa483e2',
-					domain: 'smtp.mailgun.org'
-				  }
-				}
-				 
-				var nodemailerMailgun = nodemailer.createTransport(mg(auth));
-				 var test = "test";
-				nodemailerMailgun.sendMail({
-				  from: this.mail.from,
-				  to: 'chris.kremer5@web.de',
-				  subject: this.mail.subject,
-				  text: this.mail.text
-				}, function (err, info) {
-				  if (err) {
-					console.log('Error: ' + err);
-				  }
-				  else {
-					console.log('Response: ' + info);
-				  }
+				var mailgun = require("mailgun.js");
+				var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
+				var DOMAIN = 'smtp.mailgun.org';
+				var mailgun = require('mailgun.js')({apiKey: api_key, domain: DOMAIN});
+
+				var dataMail = {
+					from:       this.mail.from + ' <'+ this.mail.name +'>',
+					to:         'chris.kremer5@web.de',
+					subject:    'Message Received' + this.mail.subject,
+					text:       this.mail.text
+				};
+
+				mailgun.messages().send(dataMail, function (error, body) {
+					console.log("sent");
 				});
 
                 /* return api('post', '/mail/', {}, this.mail, (err, result) => {

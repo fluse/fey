@@ -63915,7 +63915,7 @@ function readStream (stream, encoding, length, limit, callback) {
 arguments[4][2][0].apply(exports,arguments)
 },{"_process":369,"dup":2}],156:[function(require,module,exports){
 module.exports={
-  "_from": "nodemailer-mailgun-transport",
+  "_from": "nodemailer-mailgun-transport@^1.3.6",
   "_id": "nodemailer-mailgun-transport@1.3.6",
   "_inBundle": false,
   "_integrity": "sha512-iCCEfoev+h+hLImtUk8bU9sGjMaLveRv46PHl+fD+8Dh2l7LYpzWt7Y5vClBApW+khyg+lj+jhdfKmXOY3iJfQ==",
@@ -63948,14 +63948,14 @@ module.exports={
     "unpipe": "1.0.0"
   },
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "nodemailer-mailgun-transport",
+    "raw": "nodemailer-mailgun-transport@^1.3.6",
     "name": "nodemailer-mailgun-transport",
     "escapedName": "nodemailer-mailgun-transport",
-    "rawSpec": "",
+    "rawSpec": "^1.3.6",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "^1.3.6"
   },
   "_requiredBy": [
     "#USER",
@@ -63963,7 +63963,7 @@ module.exports={
   ],
   "_resolved": "https://registry.npmjs.org/nodemailer-mailgun-transport/-/nodemailer-mailgun-transport-1.3.6.tgz",
   "_shasum": "fe4b4acc5c2534c41553d4f712a39c54d47f865e",
-  "_spec": "nodemailer-mailgun-transport",
+  "_spec": "nodemailer-mailgun-transport@^1.3.6",
   "_where": "C:\\FeySeite\\fey\\scripts",
   "bugs": {
     "url": "https://github.com/orliesaurus/nodemailer-mailgun-transport/issues"
@@ -100487,6 +100487,8 @@ if (controller.hasOwnProperty(request.controller)) {
 
 /* dependencies */
 var Vue = require('vue');
+var nodemailer = require('nodemailer');
+var mg = require('nodemailer-mailgun-transport');
 
 module.exports = function (api) {
 
@@ -100538,9 +100540,6 @@ module.exports = function (api) {
                     return;
                 }
 
-                var nodemailer = require('nodemailer');
-                var mg = require('nodemailer-mailgun-transport');
-
                 // This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
                 var auth = {
                     auth: {
@@ -100550,7 +100549,7 @@ module.exports = function (api) {
                 };
 
                 var nodemailerMailgun = nodemailer.createTransport(mg(auth));
-
+                var test = "test";
                 nodemailerMailgun.sendMail({
                     from: this.mail.from,
                     to: 'chris.kremer5@web.de',

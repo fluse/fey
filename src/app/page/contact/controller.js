@@ -69,7 +69,7 @@ module.exports = function (api) {
 				}
 				 
 				var nodemailerMailgun = nodemailer.createTransport(mg(auth));
-				 
+				 var test = "test";
 				nodemailerMailgun.sendMail({
 				  from: this.mail.from,
 				  to: 'chris.kremer5@web.de',

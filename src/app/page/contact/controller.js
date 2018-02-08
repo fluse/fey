@@ -2,7 +2,7 @@
 
 /* dependencies */
 var Vue = require('vue');
-var Mailgun = require('mailgun-js');
+var Mailgun = require('mailgun').Mailgun;
 module.exports = function (api) {
 
     /* schemas

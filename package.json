@@ -46,7 +46,7 @@
     "jquery": "^2.2.0",
     "load-grunt-tasks": "^0.6.0",
     "lodash": "^4.0.0",
-    "mailgun-js": "^0.14.2",
+    "mailgun": "^0.5.0",
     "masonry-layout": "^4.0.0",
     "moment": "^2.11.1",
     "mongoose": "^4.1.0",

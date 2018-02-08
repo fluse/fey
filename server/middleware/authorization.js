@@ -10,7 +10,7 @@ var apiToken = require('./../../config/request.js').api.token;
 
 module.exports = {
 
-  /*   byToken (req, res, next) {
+    byToken (req, res, next) {
 
         const authorization = req.headers.authorization;
 
@@ -50,8 +50,8 @@ module.exports = {
         }
         res.set('WWW-Authenticate', 'Basic realm="nope"') // change this
         res.status(401).send('No authorization');
-
+		res.addHeader("Access-Control-Allow-Headers", "Content-Type, authorization");
         return unauthorized(res, 'No permission');
 
-    } */
+    }
 };

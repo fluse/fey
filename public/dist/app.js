@@ -22,7 +22,10 @@ var Api = function (settings) {
 Api.prototype = {
 
     call: function (method, url, params, data) {
-
+		console.log(params);
+		console.log(url);
+		console.log(method);
+		console.log(data);
         // concat url
         url = this.settings.baseName + this.settings.version + url;
 

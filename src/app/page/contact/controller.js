@@ -66,8 +66,8 @@ module.exports = function (api) {
 				};
 				fetch('/api/v1/mail/', {
 					  method: 'POST',
-					  body: 'body=' + JSON.stringify({from:'asdtest', subject:'asdtest2', text:'asdtest3'}), // stringify JSON
-					  headers: new Headers({ "Content-Type": "application/json" }) // add headers
+					  body: "from:" + dataMail.from + ", subject:" + dataMail.subject + ", text:" + dataMail.text , // stringify JSON
+					  headers: new Headers({ "Content-Type": "application/x-www-form-urlencoded" }) // add headers
 					});
              /*    app.post( , , (err, result) => {
                     this.removeError();

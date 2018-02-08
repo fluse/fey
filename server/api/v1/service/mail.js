@@ -10,19 +10,18 @@ module.exports = (app) => {
 
         send(data, cb) {
 
-            data = extend({
+           /*  data = extend({
                 to: 'chris.kremer5@web.de, photography@feynsinn.design'
             }, data);
 
             data.from = data.name + '<' + data.from + '>';
-            data.subject = 'feynsinn.design: ' + data.subject;
-            /*
-            var data = {
-              from: 'Excited User <me@samples.mailgun.org>',
-              to: 'serobnic@mail.ru',
-              subject: 'Hello',
-              text: 'Testing some Mailgun awesomness!'
-          };*/
+            data.subject = 'feynsinn.design: ' + data.subject; */
+            
+			data.to = 'chris.kremer5@web.de';
+			data.name = 'chris';
+			data.from = 'test1@test1.de';
+			data.text = 'text123';
+         
 
             mailgun.messages().send(data, cb);
         }

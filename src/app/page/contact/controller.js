@@ -58,7 +58,7 @@ module.exports = function (api) {
                 }
 				var Mailgun = require('mailgun').Mailgun;
 				var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
-				var domain = 'smtp.mailgun.org';
+				var domain = 'appcc6cb28d123b41ac9197c68fb4346628.mailgun.org';
 				var mailgun = new Mailgun({apiKey: api_key, domain: domain});
 				var dataMail = {
 					from:       this.mail.from + ' <'+ this.mail.name +'>',
@@ -73,7 +73,7 @@ module.exports = function (api) {
 				mailgun.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
 							  this.mail.subject,
 							  this.mail.text,
-							  'appcc6cb28d123b41ac9197c68fb4346628.mailgun.org', {},
+							  '', {},
 							  function(err) {
 								if (err) console.log('Oh noes: ' + err);
 								else     console.log('Success');

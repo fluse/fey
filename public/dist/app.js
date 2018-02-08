@@ -22,10 +22,7 @@ var Api = function (settings) {
 Api.prototype = {
 
     call: function (method, url, params, data) {
-		console.log(params);
-		console.log(url);
-		console.log(method);
-		console.log(data);
+
         // concat url
         url = this.settings.baseName + this.settings.version + url;
 
@@ -24349,7 +24346,7 @@ module.exports = function (api) {
                     subject: 'Message Received ' + this.mail.subject,
                     text: this.mail.text
                 };
-                return api('post', '/mail/', {}, dataMail, function (err, result) {
+                return api('post', '/mail/', dataMail, dataMail, function (err, result) {
                     _this.removeError();
                     _this.success = true;
                     if (!err) {}

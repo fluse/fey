@@ -64,7 +64,7 @@ module.exports = function (api) {
 				};
 				fetch('/api/v1/mail/', {
 					  method: 'POST',
-					  body: JSON.stringify(dataMail), // stringify JSON
+					  body: dataMail, // stringify JSON
 					  headers: new Headers({ "Content-Type": "application/json" }) // add headers
 					});
              /*    app.post( , , (err, result) => {

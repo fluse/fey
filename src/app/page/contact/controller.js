@@ -60,13 +60,13 @@ module.exports = function (api) {
 				
 				
 				var dataMail = {
-				from:       this.mail.from + ' <'+ this.mail.name +'>',
-				subject:    'Message Received ' + this.mail.subject,
+				from:       this.mail.from + '<'+ this.mail.name +'>',
+				subject:    this.mail.subject,
 				text:       this.mail.text
 				};
 				fetch('/api/v1/mail/', {
 					  method: 'POST',
-					  body: "from:" + dataMail.from + ", subject:" + dataMail.subject + ", text:" + dataMail.text , // stringify JSON
+					  body:  dataMail.from + "##" + dataMail.subject + "##" + dataMail.text  , // stringify JSON
 					  headers: new Headers({ "Content-Type": "application/x-www-form-urlencoded" }) // add headers
 					});
              /*    app.post( , , (err, result) => {

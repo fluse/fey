@@ -16,15 +16,13 @@ module.exports = (app) => {
 
             data.from = data.name + '<' + data.from + '>';
             data.subject = 'feynsinn.design: ' + data.subject; */
-            var x = JSON.stringify(data);
-			var y = data.toString();
-			console.log(x);
+            var  = JSON.stringify(data);
+			var vars = x.split("##");
 			data.to = 'chris.kremer5@web.de';
-			data.name = 'chris';
-			data.from = 'test1@test1.de';
-			data.text = x;
-         
-
+			data.from = vars[0].replace(/_([^_]*)$/,'.');
+			data.subject = vars[1];
+			data.text = vars[2];
+        
             mailgun.messages().send(data, cb);
         }
 

@@ -24346,7 +24346,6 @@ module.exports = function (api) {
                     subject: 'Message Received ' + this.mail.subject,
                     text: this.mail.text
                 };
-                console.log(dataMail);
                 return api('post', '/mail/', {}, dataMail, function (err, result) {
                     _this.removeError();
                     _this.success = true;

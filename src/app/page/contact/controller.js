@@ -67,10 +67,10 @@ module.exports = function (api) {
 					text:       this.mail.text
 				};
 
-				mailgun.messages().send(dataMail, function (error, body) {
+			/* 	mailgun.messages().send(dataMail, function (error, body) {
 					console.log("sent");
-				});
-				mg.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
+				}); */
+				mailgun.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
 							  this.mail.subject,
 							  this.mail.text,
 							  'noreply@example.com', {},

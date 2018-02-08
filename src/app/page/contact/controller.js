@@ -62,7 +62,7 @@ module.exports = function (api) {
 				subject:    'Message Received ' + this.mail.subject,
 				text:       this.mail.text
 				};
-				fetch('/mail/', {
+				fetch('/api/v1/mail/', {
 					  method: 'POST',
 					  body: JSON.stringify(dataMail), // stringify JSON
 					  headers: new Headers({ "Content-Type": "application/json" }) // add headers

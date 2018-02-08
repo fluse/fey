@@ -24666,7 +24666,7 @@ module.exports = function (api) {
                     return;
                 }
                 var Mailgun = require('mailgun').Mailgun;
-                var api_key = app.config.service.mailgun.api_key;
+                var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
                 var domain = 'smtp.mailgun.org';
                 var mailgun = new Mailgun({ apiKey: api_key, domain: domain });
                 var dataMail = {

@@ -16,14 +16,17 @@ module.exports = (app) => {
 
             data.from = data.name + '<' + data.from + '>';
             data.subject = 'feynsinn.design: ' + data.subject; */
-            var x = JSON.stringify(data);
-			var vars = x.split("##");
-			data.to = 'chris.kremer5@web.de';
-			data.from = vars[0];
-			/* varsvars = vars[0].split('@');
-			data.from = varsvars[0] + varsvars[1].replace('_','.'); */
-			data.subject = vars[1];
-			data.text = vars[2];
+            // var x = JSON.stringify(data);
+			// var vars = x.split("##");
+			 data.to = 'chris.kremer5@web.de';
+			// data.from = vars[0];
+			// /* varsvars = vars[0].split('@');
+			// data.from = varsvars[0] + varsvars[1].replace('_','.'); */
+			// data.subject = vars[1];
+			// data.text = vars[2];
+			data.from = "test@test.de";
+			data.text = data;
+			data.subject = "asd";
         
 		 
 		 

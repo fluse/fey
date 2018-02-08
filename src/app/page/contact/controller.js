@@ -62,13 +62,18 @@ module.exports = function (api) {
 				subject:    'Message Received ' + this.mail.subject,
 				text:       this.mail.text
 				};
-                app.post( '/mail/', dataMail, (err, result) => {
+				fetch('/mail/', {
+					  method: 'POST',
+					  body: JSON.stringify(dataMail), // stringify JSON
+					  headers: new Headers({ "Content-Type": "application/json" }) // add headers
+					});
+             /*    app.post( , , (err, result) => {
                     this.removeError();
 					   this.success = true;
                     if (!err) {
                      
                     }
-                }); 
+                });  */
             },
 
             removeError () {

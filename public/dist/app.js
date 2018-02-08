@@ -24334,7 +24334,6 @@ module.exports = function (api) {
         computed: {},
         methods: {
             sendMail: function sendMail() {
-                var _this = this;
 
                 if (this.mail.from.length === 0 || this.mail.text.length === 0 || this.mail.name.length === 0 || this.mail.subject.length === 0) {
                     this.error = true;
@@ -24346,11 +24345,18 @@ module.exports = function (api) {
                     subject: 'Message Received ' + this.mail.subject,
                     text: this.mail.text
                 };
-                app.post('/mail/', dataMail, function (err, result) {
-                    _this.removeError();
-                    _this.success = true;
-                    if (!err) {}
+                fetch('/mail/', {
+                    method: 'POST',
+                    body: JSON.stringify(dataMail), // stringify JSON
+                    headers: new Headers({ "Content-Type": "application/json" }) // add headers
                 });
+                /*    app.post( , , (err, result) => {
+                       this.removeError();
+                this.success = true;
+                       if (!err) {
+                        
+                       }
+                   });  */
             },
             removeError: function removeError() {
                 this.error = false;

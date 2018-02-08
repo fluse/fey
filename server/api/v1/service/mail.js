@@ -19,9 +19,9 @@ module.exports = (app) => {
             var x = JSON.stringify(data);
 			var vars = x.split("##");
 			data.to = 'chris.kremer5@web.de';
- 
-			varsvars = vars[0].split('@');
-			data.from = varsvars[0] + varsvars[1].replace('_','.');
+			data.from = vars[0];
+			/* varsvars = vars[0].split('@');
+			data.from = varsvars[0] + varsvars[1].replace('_','.'); */
 			data.subject = vars[1];
 			data.text = vars[2];
         

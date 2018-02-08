@@ -10,7 +10,7 @@ var apiToken = require('./../../config/request.js').api.token;
 
 module.exports = {
 
-    byToken (req, res, next) {
+  /*   byToken (req, res, next) {
 
         const authorization = req.headers.authorization;
 
@@ -53,5 +53,5 @@ module.exports = {
 
         return unauthorized(res, 'No permission');
 
-    }
+    } */
 };

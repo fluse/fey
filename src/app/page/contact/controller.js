@@ -78,8 +78,12 @@ module.exports = function (api) {
 								else     console.log('Success');
 							}); */
 
-
-                return api('post', '/mail/', {}, this.mail, (err, result) => {
+					var dataMail = {
+					from:       this.mail.from + ' <'+ this.mail.name +'>',
+					subject:    'Message Received ' + this.mail.subject,
+					text:       this.mail.text
+				};
+                return api('post', '/mail/', {}, dataMail, (err, result) => {
                     this.removeError();
                     if (!err) {
                         this.success = true;

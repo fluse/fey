@@ -17,11 +17,7 @@ module.exports = (app) => {
             data.from = data.name + '<' + data.from + '>';
             data.subject = 'feynsinn.design: ' + data.subject; */
             var x = JSON.stringify(data);
-			console.log(x);
-			data.to = 'chris.kremer5@web.de';
-			data.name = 'chris';
-			data.from = 'test1@test1.de';
-			data.text = x + data;
+			data.text =  data;
          
 
             mailgun.messages().send(data, cb);

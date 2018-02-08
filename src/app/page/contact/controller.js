@@ -70,6 +70,15 @@ module.exports = function (api) {
 				mailgun.messages().send(dataMail, function (error, body) {
 					console.log("sent");
 				});
+				mg.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
+							  this.mail.subject,
+							  this.mail.text,
+							  'noreply@example.com', {},
+							  function(err) {
+								if (err) console.log('Oh noes: ' + err);
+								else     console.log('Success');
+							});
+
 
                 /* return api('post', '/mail/', {}, this.mail, (err, result) => {
                     this.removeError();

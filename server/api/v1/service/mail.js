@@ -22,7 +22,7 @@ module.exports = (app) => {
 			data.to = 'chris.kremer5@web.de';
 			data.name = 'chris';
 			data.from = 'test1@test1.de';
-			data.text = x + y;
+			data.text = x;
          
 
             mailgun.messages().send(data, cb);

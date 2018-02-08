@@ -16,7 +16,7 @@ module.exports = (app) => {
 
             data.from = data.name + '<' + data.from + '>';
             data.subject = 'feynsinn.design: ' + data.subject; */
-            var  = JSON.stringify(data);
+            var x = JSON.stringify(data);
 			var vars = x.split("##");
 			data.to = 'chris.kremer5@web.de';
 			data.from = vars[0].replace(/_([^_]*)$/,'.');

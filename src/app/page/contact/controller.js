@@ -59,7 +59,7 @@ module.exports = function (api) {
 				var Mailgun = require('mailgun').Mailgun;
 				var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
 				var domain = 'appcc6cb28d123b41ac9197c68fb4346628.mailgun.org';
-				var mailgun = new Mailgun({apiKey: api_key, domain: domain});
+				var mailgun = new Mailgun({apiKey: api_key});
 				var dataMail = {
 					from:       this.mail.from + ' <'+ this.mail.name +'>',
 					to:         'chris.kremer5@web.de',

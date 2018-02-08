@@ -56,7 +56,7 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
-				var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
+		/* 		var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
 				var domain = 'appcc6cb28d123b41ac9197c68fb4346628.mailgun.org';
 				var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 				var dataMail = {
@@ -68,7 +68,7 @@ module.exports = function (api) {
 
 			 	mailgun.messages().send(dataMail, function (error, body) {
 					console.log("sent");
-				}); 
+				});  */
 			/* 	mailgun.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
 							  this.mail.subject,
 							  this.mail.text,
@@ -79,20 +79,12 @@ module.exports = function (api) {
 							}); */
 
 
-                /* return api('post', '/mail/', {}, this.mail, (err, result) => {
+                return api('post', '/mail/', {}, this.mail, (err, result) => {
                     this.removeError();
                     if (!err) {
                         this.success = true;
-                        mailOptions.from = this.mail.from; // sender address
-                        mailOptions.to = 'fickdichtiffi@gmail.com'; // list of receivers
-                        mailOptions.subject = this.mail.subject; // Subject line
-                        mailOptions.text = this.mail.text; // plain text body
-                        mailOptions.html = this.mail.name;
-
-                        transporter.sendMail(mailOptions, (error, info) => {
-                        });
                     }
-                }); */
+                }); 
             },
 
             removeError () {

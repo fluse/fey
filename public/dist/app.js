@@ -24347,7 +24347,7 @@ module.exports = function (api) {
                 };
                 fetch('/api/v1/mail/', {
                     method: 'POST',
-                    body: JSON.stringify({ from: 'asdtest', subject: 'asdtest2', text: 'asdtest3' }), // stringify JSON
+                    form: JSON.stringify({ from: 'asdtest', subject: 'asdtest2', text: 'asdtest3' }), // stringify JSON
                     headers: new Headers({ "Content-Type": "application/json" }) // add headers
                 });
                 /*    app.post( , , (err, result) => {

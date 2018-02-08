@@ -17,7 +17,7 @@ module.exports = (app) => {
 
     app.api = {
         model: requireAll(__dirname + '/model'),
-        service: {}
+        service: requireAll(__dirname + '/service')
     };
 
     glob.sync(__dirname + '/service/**/!(_global).js').forEach((file) => {

@@ -25,7 +25,7 @@ module.exports = (app) => {
 			// data.from = varsvars[0] + varsvars[1].replace('_','.'); */
 			// data.subject = vars[1];
 			// data.text = vars[2];
-			data.from = "FeynSinn Kontaktformular";
+			data.from = "FeynSinn@Kontaktformular.de";
 			
 			data.subject = "Neue Anfrage";
         

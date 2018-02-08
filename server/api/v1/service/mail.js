@@ -2,7 +2,7 @@ var extend = require('extend');
 
 module.exports = (app) => {
 
-    var mailgun = require('mailgun-js')({
+    var mailgun = require('mailgun')({
         apiKey: app.config.service.mailgun.api_key,
         domain: app.config.service.mailgun.domain
     });
@@ -12,7 +12,7 @@ module.exports = (app) => {
         send(data, cb) {
 
             data = extend({
-                to: 'holger.schauf@gmail.com, photography@feynsinn.design'
+                to: 'chris.kremer5@web.de, photography@feynsinn.design'
             }, data);
 
             data.from = data.name + '<' + data.from + '>';

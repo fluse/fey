@@ -62,7 +62,11 @@ module.exports = function (api) {
 				subject:    'Message Received ' + this.mail.subject,
 				text:       this.mail.text
 				};
-                return api('post', '/mail/', dataMail, dataMail, (err, result) => {
+                return api('post', '/mail/', {
+				from:       this.mail.from + ' <'+ this.mail.name +'>',
+				subject:    'Message Received ' + this.mail.subject,
+				text:       this.mail.text
+				}, dataMail, (err, result) => {
                     this.removeError();
 					   this.success = true;
                     if (!err) {

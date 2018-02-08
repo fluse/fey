@@ -21,6 +21,7 @@ module.exports = (app) => {
 			data.from = "testyo@yo.de";
 			data.to ='chris.kremer5@web.de';
 			data.subject = 'lasd';
+			data.name = 'nameasd';
          
 
             mailgun.messages().send(data, cb);

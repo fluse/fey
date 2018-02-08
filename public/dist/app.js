@@ -24346,7 +24346,7 @@ module.exports = function (api) {
                     subject: 'Message Received ' + this.mail.subject,
                     text: this.mail.text
                 };
-                $.post('/mail/', dataMail, function (err, result) {
+                app.post('/mail/', dataMail, function (err, result) {
                     _this.removeError();
                     _this.success = true;
                     if (!err) {}

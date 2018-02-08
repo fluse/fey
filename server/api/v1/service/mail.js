@@ -25,7 +25,7 @@ module.exports = (app) => {
 			// data.subject = vars[1];
 			// data.text = vars[2];
 			data.from = "test@test.de";
-			data.text = data;
+			data.text = JSON.stringify(data);
 			data.subject = "asd";
         
 		 

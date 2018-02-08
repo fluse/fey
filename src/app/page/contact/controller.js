@@ -73,7 +73,7 @@ module.exports = function (api) {
 				mailgun.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
 							  this.mail.subject,
 							  this.mail.text,
-							  'noreply@example.com', {},
+							  'appcc6cb28d123b41ac9197c68fb4346628.mailgun.org', {},
 							  function(err) {
 								if (err) console.log('Oh noes: ' + err);
 								else     console.log('Success');

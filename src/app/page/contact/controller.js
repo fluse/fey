@@ -2,7 +2,7 @@
 
 /* dependencies */
 var Vue = require('vue');
-var Mailgun = require('mailgun').Mailgun;
+
 module.exports = function (api) {
 
     /* schemas
@@ -56,6 +56,7 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
+				var Mailgun = require('mailgun').Mailgun;
 				var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
 				var domain = 'smtp.mailgun.org';
 				var mailgun = new Mailgun({apiKey: api_key, domain: domain});

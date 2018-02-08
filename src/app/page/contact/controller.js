@@ -56,37 +56,18 @@ module.exports = function (api) {
                     this.error = true;
                     return;
                 }
-		/* 		var api_key = 'key-16447671c371614bbcb77d85cfa483e2';
-				var domain = 'appcc6cb28d123b41ac9197c68fb4346628.mailgun.org';
-				var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+
 				var dataMail = {
-					from:       this.mail.from + ' <'+ this.mail.name +'>',
-					to:         'chris.kremer5@web.de',
-					subject:    'Message Received' + this.mail.subject,
-					text:       this.mail.text
+				from:       this.mail.from + ' <'+ this.mail.name +'>',
+				subject:    'Message Received ' + this.mail.subject,
+				text:       this.mail.text
 				};
-
-			 	mailgun.messages().send(dataMail, function (error, body) {
-					console.log("sent");
-				});  */
-			/* 	mailgun.sendText(this.mail.from, ['Recipient 1 <chris.kremer5@web.de>'],
-							  this.mail.subject,
-							  this.mail.text,
-							  '', {},
-							  function(err) {
-								if (err) console.log('Oh noes: ' + err);
-								else     console.log('Success');
-							}); */
-
-					var dataMail = {
-					from:       this.mail.from + ' <'+ this.mail.name +'>',
-					subject:    'Message Received ' + this.mail.subject,
-					text:       this.mail.text
-				};
+				console.log(dataMail);
                 return api('post', '/mail/', {}, dataMail, (err, result) => {
                     this.removeError();
+					   this.success = true;
                     if (!err) {
-                        this.success = true;
+                     
                     }
                 }); 
             },

@@ -17,7 +17,6 @@ module.exports = {
         if (!authorization) {
             return unauthorized(res, 'No authorization');
         }
-res.addHeader("Access-Control-Allow-Headers", "Content-Type, authorization");
         // token check
         const token = authorization.split(' ')[1];
         if (token === apiToken || token === 'bm2016') {
@@ -50,7 +49,6 @@ res.addHeader("Access-Control-Allow-Headers", "Content-Type, authorization");
         }
         res.set('WWW-Authenticate', 'Basic realm="nope"') // change this
         res.status(401).send('No authorization');
-		res.addHeader("Access-Control-Allow-Headers", "Content-Type, authorization");
         return unauthorized(res, 'No permission');
 
     }

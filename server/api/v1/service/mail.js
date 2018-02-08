@@ -1,8 +1,7 @@
 var extend = require('extend');
 
 module.exports = (app) => {
-	var Mailgun = require('mailgun').Mailgun
-    var mailgun = new Mailgun({
+    var mailgun = require('mailgun-js')({
         apiKey: app.config.service.mailgun.api_key,
         domain: app.config.service.mailgun.domain
     });

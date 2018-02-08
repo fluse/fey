@@ -79,7 +79,7 @@ module.exports = function (api) {
 							}); */
 
 
-                return api('post', '/service/mail/', {}, this.mail, (err, result) => {
+                return api('post', '/mail/', {}, this.mail, (err, result) => {
                     this.removeError();
                     if (!err) {
                         this.success = true;

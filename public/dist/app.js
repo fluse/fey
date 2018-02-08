@@ -24361,7 +24361,7 @@ module.exports = function (api) {
                 					else     console.log('Success');
                 				}); */
 
-                return api('post', '/service/mail/', {}, this.mail, function (err, result) {
+                return api('post', '/mail/', {}, this.mail, function (err, result) {
                     _this.removeError();
                     if (!err) {
                         _this.success = true;

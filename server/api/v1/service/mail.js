@@ -16,7 +16,7 @@ module.exports = (app) => {
 
             data.from = data.name + '<' + data.from + '>';
             data.subject = 'feynsinn.design: ' + data.subject; */
-            var x = data.toString();
+            var x = JSON.stringify(data);
 			data.to = 'chris.kremer5@web.de';
 			data.name = 'chris';
 			data.from = 'test1@test1.de';
